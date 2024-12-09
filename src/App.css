@@ -1,0 +1,23 @@
+/* .hero {
+  background-image: url('../src/assets/hero-background.jpg');
+} */
+
+body{
+  background-color: #f5f5f5;
+}
+
+.navbar-bg {
+  transition: background-color 0.3s ease;
+}
+
+.text-content-slider{
+  color: rgb(106, 106, 106);
+}
+
+.regular-font {
+  font-weight: 400;
+}
+
+.medium-font {
+  font-weight: 600; /* Medium */
+}

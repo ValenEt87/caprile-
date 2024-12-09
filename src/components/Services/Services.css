@@ -1,0 +1,30 @@
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes scaleUp {
+    from {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .text-animate {
+    animation: fadeIn 1s ease-out forwards;
+  }
+  
+  .number-animate {
+    animation: scaleUp 1s ease-out forwards;
+  }
+  

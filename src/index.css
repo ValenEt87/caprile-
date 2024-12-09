@@ -1,0 +1,272 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Manrope", sans-serif;
+  /* line-height: 1.5; */
+  font-weight: 400; /* es así esto? */
+  color: #252526;
+  /* color-scheme: light dark; */
+  /* color: rgba(255, 255, 255, 0.87); */
+  /* background-color: #242424; */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root{
+  --color1: #113B21;
+  --color2: #FBD15B;
+  --color3: #252526;
+  --color4: #F5F5F5;
+  --color5: #0C7734;
+}
+
+.color-blue-bmr {
+  color: var(--color1);
+}
+.color-yellow-bmr {
+  color: var(--color2);
+}
+.color-black-bmr {
+  color: var(--color3);
+}
+.color-white-bmr {
+  color: var(--color4);
+}
+
+
+.bg-green-caprile{
+  background-color: var(--color1);
+}
+.bg-yellow-bmr{
+  background-color: var(--color2);
+}
+.bg-black-bmr {
+  background-color: var(--color3);
+}
+.bg-white-bmr {
+  background-color: var(--color4);
+}
+.bg-green-caprile {
+  color: var(--color4);
+}
+
+.border-blue-bmr{
+  border-color: var(--color1);
+}
+.border-yellow-bmr{
+  border-color: var(--color2);
+}
+
+.manrope-light {
+  font-weight: 300;
+  font-style: normal;
+}
+
+.manrope-regular {
+  font-weight: 400;
+  font-style: normal;
+}
+
+.manrope-medium {
+  font-weight: 500;
+  font-style: normal;
+}
+
+.manrope-semibold {
+  font-weight: 600;
+  font-style: normal;
+}
+
+.manrope-bold {
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* .bg-hero{
+
+  background-image: url('/imgs/ascochinga.jpg');
+  background-size: cover;
+} */
+.bg-hero {
+  background-image: url('/imgs/ascochinga.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative; /* Necesario para el pseudo-elemento */
+  z-index: 0;
+}
+
+.bg-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #113B21;
+  opacity: 0.8;
+  z-index: -1; /* Coloca la capa detrás del contenido */
+  pointer-events: none; /* Evita que interfiera con el contenido interactivo */
+}
+
+.video-bg{
+  background-image: url('/imgs/video-bg.jpg');
+}
+.bg-services{
+  background-image: url('/imgs/ascochinga.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative; /* Necesario para el pseudo-elemento */
+  z-index: 0;
+}
+.bg-services::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #113B21;
+  opacity: 0.8;
+  z-index: -1; /* Coloca la capa detrás del contenido */
+  pointer-events: none; /* Evita que interfiera con el contenido interactivo */
+}
+
+
+.title-decoration {
+  position: relative;
+  display: inline-block; 
+  margin-bottom: 2rem;
+}
+.title-decoration::before {
+  content: "";
+  position: absolute;
+  top: -1.5rem; /* Ajusta la posición vertical de la línea */
+  left: 50%; /* Centra horizontalmente la línea */
+  transform: translateX(-50%); /* Centra la línea respecto al texto */
+  width: 6rem; /* Ajusta la longitud de la línea */
+  height: 1.5px; /* Ajusta el grosor de la línea */
+  /* background-image: linear-gradient(to right, #273E71, #4C68D7); */
+  background-image: linear-gradient(to right, #1E5631, #7ec480); 
+}
+
+.title-decoration2 {
+  position: relative;
+  display: inline-block; 
+  margin-top: 2rem;
+}
+.title-decoration2::before {
+  content: "";
+  position: absolute;
+  top: -1.5rem; /* Ajusta la posición vertical de la línea */
+  left: 50%; /* Centra horizontalmente la línea */
+  transform: translateX(-50%); /* Centra la línea respecto al texto */
+  width: 6rem; /* Ajusta la longitud de la línea */
+  height: 1.5px; /* Ajusta el grosor de la línea */
+  /* background-image: linear-gradient(to right, #273E71, #4C68D7); */
+  background-color: #F5F5F5 ;
+}
+
+.bg-blue-gradient{
+  /* background-image: linear-gradient(to left, #273E71, #1e3360); */
+  background-image: linear-gradient(to left, #1E5631, #145A32)
+}
+
+.hover-blue:hover{
+  background-color: #334D86;
+}
+
+.border-3 {
+    border-width: 3px;
+}
+
+.nav-link{
+  color: rgb(56, 56, 56);
+}
+.nav-link:hover{
+  transition: ease-in 200ms;
+  color: var(--color5);
+}
+
+.navbar-bg .nav-link.text-white {
+  color: white;
+}
+
+.hover-unfilled-buttons:hover{
+  color: var(--color4);
+  background-color: var(--color1);
+}
+
+.bg-whatsapp{
+  background-color: #25d366;
+}
+
+li {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+li.menu{
+  padding: 0 15px;
+}
+
+h1 {
+  font-family: 'Host Grotesk', sans-serif;
+  font-weight: 800; /* Negrita */
+}
+h2 {
+  font-family: 'Host Grotesk', sans-serif;
+  font-weight: 800; /* Negrita */
+}
+
+
+/* Estilos para el contenedor de la imagen */
+.image-hover-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+/* Imagen inicial */
+.image-hover-container img {
+  transition: opacity 0.3s ease-in-out; /* Suaviza el cambio entre imágenes */
+}
+
+/* Imagen alternativa que se muestra al hacer hover */
+.image-hover-container img.alt-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0; /* Oculta inicialmente la imagen alternativa */
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Cambiar imagen al hacer hover */
+.image-hover-container:hover img {
+  opacity: 0; /* Oculta la imagen original */
+}
+
+.image-hover-container:hover img.alt-image {
+  opacity: 1; /* Muestra la imagen alternativa */
+}
+
+
+button:focus {
+  outline: none;
+}
+
+.lightbox {
+  transition: opacity 0.3s ease-in-out;
+}
