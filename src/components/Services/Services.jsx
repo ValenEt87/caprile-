@@ -105,7 +105,7 @@ import './Services.css'; // Archivo con las animaciones CSS
 const Counter = ({ value, duration }) => {
   const [count, setCount] = useState(0);
 
-  useEffect(() => {
+ /*  useEffect(() => {
     let observer;
     const element = document.getElementById(`counter-${value}`);
 
@@ -131,14 +131,14 @@ const Counter = ({ value, duration }) => {
     return () => {
       if (observer && element) observer.unobserve(element);
     };
-  }, [value, duration]);
+  }, [value, duration]); */
 
   return (
     <span
       id={`counter-${value}`}
-      className="text-7xl font-bold color-blue-bmr number-animate"
+      className="lg:text-7xl text-4xl font-bold color-blue-bmr number-animate"
     >
-      +{count}
+      +{value}
     </span>
   );
 };
@@ -187,7 +187,7 @@ const Services = () => {
             <div className="w-28 flex justify-center items-center">
               <Counter value={service.value} duration={duration} />
             </div>
-            <h3 className="text-2xl font-bold color-blue-bmr mb-3 text-animate">
+            <h3 className="lg:text-2xl text-lg font-bold color-blue-bmr mb-3 text-animate">
               {service.title}
             </h3>
             <p className="text-gray-500 text-animate">{service.description}</p>

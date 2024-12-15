@@ -67,12 +67,23 @@ import React from 'react'
             <p className="mb-8 text-lg font-normal text-gray-100 lg:text-xl sm:px-16 lg:px-40">
               Más de 50 años y tres generaciones construyendo y remodelando campos de golf.
             </p>
-            <a
-              href="#contacto"
-              className="color-blue-bmr font-bold bg-yellow-bmr transition duration-300 ease-in-out focus:ring-2 focus:outline-none focus:ring-white dark:focus:ring-yellow-800 rounded-md text-base py-3 px-6 lg:px-8 text-center w-fit"
-            >
-              Contáctanos
-            </a>
+            <div className='flex justify-center items-center gap-1'>
+              <a
+                href="#contacto"
+                className="color-blue-bmr font-bold bg-yellow-bmr transition duration-300 ease-in-out focus:ring-1 focus:outline-none focus:ring-white dark:focus:ring-yellow-800 rounded-md text-base py-3 px-6 lg:px-8 text-center w-fit"
+              >
+                Contactanos
+              </a>
+              <a
+                href="#proyectos"
+                className="text-white font-bold bg-transparent transition duration-300 ease-in-out focus:ring-1 focus:outline-none focus:ring-white dark:focus:ring-yellow-800 rounded-md text-base py-3 px-6 text-center w-fit flex items-center gap-2"
+              >
+                Ver proyectos
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                </svg>
+              </a>
+            </div>
           </div>
           {/* Indicador de scroll */}
           <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2">

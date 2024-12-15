@@ -12,11 +12,11 @@
   font-family: "Manrope", sans-serif;
   /* line-height: 1.5; */
   font-weight: 400; /* es así esto? */
-  color: #252526;
+  color: #1c1e21;
   /* color-scheme: light dark; */
   /* color: rgba(255, 255, 255, 0.87); */
   /* background-color: #242424; */
-
+  background-color: #FCF5EB;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -25,9 +25,10 @@
 
 :root{
   --color1: #113B21;
+  /* --color1: rgb(16, 57, 40); */
   --color2: #FBD15B;
   --color3: #252526;
-  --color4: #F5F5F5;
+  --color4: #FCF5EB;
   --color5: #0C7734;
 }
 
@@ -202,6 +203,10 @@
   color: white;
 }
 
+/* .navbar-bg{
+  background-color: rgba(252, 245, 235, .8);
+} */
+
 .hover-unfilled-buttons:hover{
   color: var(--color4);
   background-color: var(--color1);
@@ -216,19 +221,22 @@ li {
   margin-right: 0 !important;
 }
 
-li.menu{
+/* li.menu{
   padding: 0 15px;
-}
+} */
 
 h1 {
   font-family: 'Host Grotesk', sans-serif;
-  font-weight: 800; /* Negrita */
+  font-weight: 500; /* Negrita */
 }
 h2 {
   font-family: 'Host Grotesk', sans-serif;
-  font-weight: 800; /* Negrita */
+  font-weight: 500; /* Negrita */
 }
-
+h3 {
+  font-family: 'Host Grotesk', sans-serif;
+  font-weight: 500; /* Negrita */
+}
 
 /* Estilos para el contenedor de la imagen */
 .image-hover-container {
@@ -269,4 +277,120 @@ button:focus {
 
 .lightbox {
   transition: opacity 0.3s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Estilos generales para el acordeón */
+.accordion {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Estilos del acordeón item */
+.accordion-item {
+  border: .5px solid #817e7e;
+  border-radius: 8px;
+  background-color: #fff;
+  margin-bottom: 8px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover para mejorar la sombra */
+.accordion-item:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px); /* Sutil movimiento hacia arriba */
+}
+
+/* Estilos del header del acordeón */
+.accordion-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #113B21; /* Fondo verde oscuro */
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover sobre el header del acordeón */
+/* .accordion-header:hover {
+  background-color: #1a5b37;
+} */
+
+/* Transición suave para el ícono */
+.accordion-header svg {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+/* Cuando el acordeón está activo (abierto) */
+.accordion-header.active svg {
+  transform: rotate(180deg);
+}
+
+/* Cuerpo del acordeón */
+.accordion-body {
+  padding: 16px;
+  background-color: #f9f9f9; /* Fondo más claro para el cuerpo */
+  display: none; /* Por defecto, oculto */
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+/* Cuando el cuerpo del acordeón está activo (visible) */
+.accordion-body.active {
+  display: block;
+  opacity: 1;
+  max-height: 500px; /* Establece un valor de altura máxima, ajusta según el contenido */
+}
+
+/* Estilos de la lista dentro del acordeón */
+.accordion-body ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.accordion-body li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+/* Estilo para los iconos dentro de los ítems */
+.accordion-body li svg {
+  color: green;
 }

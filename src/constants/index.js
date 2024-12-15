@@ -8,7 +8,7 @@ import img6 from "../../public/imgs/ascochinga.jpg";
 
 export const golfCourses = [
   {
-    category: "disenados-y-construidos",
+    category: "Disenados-y-construidos",
     courses: [
       {
         title: "Los Lagartos Country Club (Pilar, Bs As)",
@@ -218,11 +218,25 @@ export const golfCourses = [
   ////////////////////////////////////////////////////////////////////////////////////////////////
 
   {
-    category: "remodelados-e-intervenidos",
+    category: "Remodelados-e-intervenidos",
     courses: [
       {
         title: "Jockey Club Argentino (San Isidro, Buenos Aires)",
         coverImage: img1,
+        images: [
+          { src: img5, alt: "Vista del campo del Jockey Club en San Isidro" }
+        ]
+      },
+      {
+        title: "Jockey Club Argentino",
+        coverImage: img2,
+        images: [
+          { src: img5, alt: "Vista del campo del Jockey Club en San Isidro" }
+        ]
+      },
+      {
+        title: "Jockey Club Argentino",
+        coverImage: img3,
         images: [
           { src: img5, alt: "Vista del campo del Jockey Club en San Isidro" }
         ]
@@ -232,6 +246,20 @@ export const golfCourses = [
   {
     category: "Urbanizaciones",
     courses: [
+      {
+        title: "Los Lagartos C.C. (Pilar, Buenos Aires)",
+        coverImage: img1,
+        images: [
+          { src: img5, alt: "Campo principal de Los Lagartos Country Club" }
+        ]
+      },
+      {
+        title: "Los Lagartos C.C. (Pilar, Buenos Aires)",
+        coverImage: img1,
+        images: [
+          { src: img5, alt: "Campo principal de Los Lagartos Country Club" }
+        ]
+      },
       {
         title: "Los Lagartos C.C. (Pilar, Buenos Aires)",
         coverImage: img1,
