@@ -404,6 +404,11 @@ const Proyectos = () => {
     );
   };
 
+  const formatCategoryTitle = (title) => {
+    return decodeURIComponent(title.replace(/-/g, " ")).replace(/n~|ñ/g, "ñ");
+  };
+
+  
   return (
     <>
       <Navbar />

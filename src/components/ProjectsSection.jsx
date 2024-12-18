@@ -361,6 +361,9 @@ const ProjectsSection = () => {
     loadProjects();
   }, []);
   
+  const formatCategoryTitle = (title) => {
+    return decodeURIComponent(title.replace(/-/g, " ")).replace(/n~|ñ/g, "ñ");
+  };
 
   const openLightbox = (images, index, title) => {
     setCurrentImages(images);
@@ -428,7 +431,7 @@ const ProjectsSection = () => {
             </defs>
             <path d="M975.2,119.57c-157.3-58.66-319.79-88.72-487.61-88C320.44,32.35,158,60.14,1.23,119.71a.75.75,0,0,1-1-.49l-.1-.34A.75.75,0,0,1,.51,118c3.73-2.08,7.42-4.23,11.2-6.21C50.11,91.7,90,75.1,130.91,60.78,181.24,43.15,232.55,29,285,19.59c31.37-5.63,63-10,94.64-13.78C421.32.85,463.23-.55,505.18.18A1096,1096,0,0,1,625.52,8.9,1071.71,1071.71,0,0,1,886.23,76,753,753,0,0,1,971.74,116c1.15.63,2.26,1.33,3.38,2a.74.74,0,0,1,.32.87Z" />
           </svg> */}
-          <h2 className="text-xl lg:text-4xl font-medium mb-8 text-center">Proyectos desarrollados</h2>
+          <h2 className="text-2xl lg:text-4xl font-medium mb-6 text-center">Proyectos desarrollados</h2>
         </div>
 
         {/* {Object.keys(projectsByCategory).map((category, idx) => (
@@ -452,8 +455,8 @@ const ProjectsSection = () => {
         ))} */}
         {Object.keys(projectsByCategory).map((category, idx) => (
           <div key={idx} className="mb-12 col-span-12 lg:col-span-10 lg:col-start-2" data-aos="fade-up">
-            <div className="flex justify-between items-center mb-4">
-              <h3 className="text-xl font-bold">{category}</h3>
+            <div className="flex justify-between items-center mb-3">
+              <h3 className="text-xl font-medium">{formatCategoryTitle(category)}</h3>
               <a
                 href={`/proyectos?categoria=${category.toLowerCase().replace(/ /g, "-")}`}
                 className="color-blue-bmr font-bold hover:underline"
@@ -534,7 +537,124 @@ const Lightbox = ({ images, currentIndex, onClose, onNext, onPrevious, title }) 
 };
 
 
+// const ProjectsSection = () => {
+//   return (
+//     <>
+//       <section className="grid grid-cols-12 mx-5 pb-24 gap-5 items-center">
+//       <div
+//           className="col-span-12 lg:col-span-10 lg:col-start-2 lg:col-span-5 lg:col-start-2 px-2 flex flex-col items-center"
+//           data-aos="fade-up"
+//           data-aos-duration="1000"
+//           data-aos-easing="ease-in-out"
+//           data-aos-delay="0"
+//       >
+//           <div className='col-span-10 col-start-2 lg:col-start-2 lg:col-span-5 rounded-lg lg:mb-0' data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="0">
+//           <img src="/imgs/jockeyclubsalta 2.jpg" alt="" className='rounded-lg' />
+//       </div>
+//       </div>
 
+//       <div
+//           className="col-span-12 lg:col-span-10 lg:col-start-2 lg:col-start-7 lg:col-span-5 px-2"
+//           data-aos="fade-up"
+//           data-aos-duration="1000"
+//           data-aos-easing="ease-in-out"
+//           data-aos-delay="300"
+//       >
+//           <h3 className="text-xl lg:text-4xl font-medium mb-3">
+//               Proyectos diseñados y construídos
+//           </h3>
+//           {/* <p className="px-1 lg:text-lg">
+//               Muchos de estos proyectos fueron con diseño propio y otros en
+//               colaboración.
+//           </p> */}
+//           <div className="mt-4 lg:mt-6 flex justify-center md:justify-start gap-2">
+//           <a href="/sobre-nosotros" className="font-medium hover:text-green-700 py-3 underline decoration-green-700 underline-offset-4 rounded-lg flex items-center gap-2">
+//               Ver todos
+//               <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+//                   <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+//               </svg>
+//           </a>
+//           </div>
+//       </div>
+//       </section>
+//       <section className="grid grid-cols-12 mx-5 gap-5 items-center">
+//         <div
+//             className="col-span-12 lg:col-span-10 lg:col-start-2 lg:col-span-5 lg:col-start-2 px-2 flex flex-col items-start"
+//             data-aos="fade-up"
+//             data-aos-duration="1000"
+//             data-aos-easing="ease-in-out"
+//             data-aos-delay="0"
+//         >
+//             <h3 className="text-xl lg:text-4xl font-medium mb-3">
+//                 Proyectos remodelados e intervenidos
+//             </h3>
+//             {/* <p className="px-1 lg:text-lg">
+//                 Muchos de estos proyectos fueron con diseño propio y otros en
+//                 colaboración.
+//             </p> */}
+//             <div className="mt-4 lg:mt-6 flex justify-center md:justify-start gap-2">
+//             <a href="/sobre-nosotros" className="font-medium hover:text-green-700 py-3 underline decoration-green-700 underline-offset-4 rounded-lg flex items-center gap-2">
+//                 Ver todos
+//                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+//                     <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+//                 </svg>
+//             </a>
+//             </div>
+//         </div>
+
+//         <div
+//             className="col-span-12 lg:col-span-10 lg:col-start-2 lg:col-start-7 lg:col-span-5 px-2"
+//             data-aos="fade-up"
+//             data-aos-duration="1000"
+//             data-aos-easing="ease-in-out"
+//             data-aos-delay="300"
+//         >
+            
+//             <div className='col-span-10 col-start-2 lg:col-start-2 lg:col-span-5 rounded-lg lg:mb-0' data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="0">
+//               <img src="/imgs/ascochinga.jpg" alt="" className='rounded-lg' />
+//             </div>
+//       </div>
+//       </section>
+//       <section className="grid grid-cols-12 mx-5 pt-24 gap-5 items-center">
+//       <div
+//           className="col-span-12 lg:col-span-10 lg:col-start-2 lg:col-span-5 lg:col-start-2 px-2 flex flex-col items-center"
+//           data-aos="fade-up"
+//           data-aos-duration="1000"
+//           data-aos-easing="ease-in-out"
+//           data-aos-delay="0"
+//       >
+//           <div className='col-span-10 col-start-2 lg:col-start-2 lg:col-span-5 rounded-lg lg:mb-0' data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="0">
+//           <img src="/imgs/jockeyclubsalta 2.jpg" alt="" className='rounded-lg' />
+//       </div>
+//       </div>
+
+//       <div
+//           className="col-span-12 lg:col-span-10 lg:col-start-2 lg:col-start-7 lg:col-span-5 px-2"
+//           data-aos="fade-up"
+//           data-aos-duration="1000"
+//           data-aos-easing="ease-in-out"
+//           data-aos-delay="300"
+//       >
+//           <h3 className="text-xl lg:text-4xl font-medium mb-3">
+//               Urbanizaciones
+//           </h3>
+//           {/* <p className="px-1 lg:text-lg">
+//               Muchos de estos proyectos fueron con diseño propio y otros en
+//               colaboración.
+//           </p> */}
+//           <div className="mt-4 lg:mt-6 flex justify-center md:justify-start gap-2">
+//           <a href="/sobre-nosotros" className="font-medium hover:text-green-700 py-3 underline decoration-green-700 underline-offset-4 rounded-lg flex items-center gap-2">
+//               Ver todos
+//               <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+//                   <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+//               </svg>
+//           </a>
+//           </div>
+//       </div>
+//       </section>
+//     </>
+//     );
+// };
 
 
 export default ProjectsSection;

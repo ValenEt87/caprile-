@@ -25,7 +25,7 @@ const Navbar = () => {
 
   return (
     <div>
-        <nav className="navbar-bg fixed w-full z-50 top-0 start-0 bg-white" data-aos="fade-down" data-aos-duration="800" data-aos-easing="ease-in-out">
+        <nav className="navbar-bg fixed w-full z-50 top-0 start-0 bg-white-bmr" data-aos="fade-down" data-aos-duration="800" data-aos-easing="ease-in-out">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4">
                 <a href="/" className="flex items-center">
                     <img src="./logo.svg" alt="logo de Caprile Golf" className='max-w-32' />

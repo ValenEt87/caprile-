@@ -1,5 +1,4 @@
 import React from 'react'
-
 /* const Hero = () => {
   return (
     <div>
@@ -28,15 +27,12 @@ import React from 'react'
     const slides = [
       {
         image: "/imgs/ascochinga.jpg",
-        title: "Golf Course Design & Construction",
       },
       {
         image: "/imgs/ascochinga2.jpg",
-        title: "Innovación en Campos de Golf",
       },
       {
         image: "/imgs/ascochinga3.jpg",
-        title: "Experiencia y Excelencia",
       },
     ];
   
@@ -46,14 +42,13 @@ import React from 'react'
       // Cambiar el slide cada 5 segundos
       const interval = setInterval(() => {
         setCurrentSlide((prev) => (prev + 1) % slides.length);
-      }, 5000); // Cambia cada 5 segundos
+      }, 10000); // Cambia cada 5 segundos
   
       return () => clearInterval(interval);
     }, [slides.length]);
   
-    return (
+    /* return (
       <div className="relative">
-        {/* Slide */}
         <section
           className="bg-center bg-no-repeat bg-hero bg-fixed h-dvh flex flex-col justify-center transition-all duration-1000"
           style={{
@@ -85,7 +80,6 @@ import React from 'react'
               </a>
             </div>
           </div>
-          {/* Indicador de scroll */}
           <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2">
             <div className="animate-bounce">
               <img src='/public/scroll-icon2.svg'
@@ -97,7 +91,70 @@ import React from 'react'
         </section>
       </div>
     );
-  };
+  }; */
+
+
+  return (
+    <div className=" text-white">
+      <section className="grid grid-cols-12 gap-5 rounded-xl mt-16 mx-6 items-center h-[720px] bg-hero bg-fixed">
+        {/* Título Fijo Izquierdo */}
+        <div className="col-span-12 col-start-2 lg:col-start-2 md:col-span-5 space-y-6">
+          <h1 className="text-4xl md:text-5xl lg:text-7xl font-medium">
+            Golf Course Design & Construction
+          </h1>
+          <p className="text-lg font-normal lg:text-xl lg:pr-28">
+            Más de 50 años y tres generaciones construyendo y remodelando campos de golf.
+          </p>
+          <div className="flex items-center gap-3">
+            <a
+              href="#contacto"
+              className="font-bold bg-green-950 transition duration-300 ease-in-out rounded-md text-base py-3 px-6 lg:px-8 hover:bg-green-900"
+            >
+              Contactanos
+            </a>
+            <a
+              href="#proyectos"
+              className="text-white font-bold bg-transparent transition duration-300 ease-in-out rounded-md text-base py-3 px-6 flex items-center gap-2"
+            >
+              Ver proyectos
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                className="bi bi-chevron-down"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        {/* Contenedor de Imágenes (Cuadrado Perfecto) */}
+      {/*   <div className="col-span-12 md:col-span-6 flex justify-center items-center">
+          <div className="relative w-full max-w-lg aspect-square rounded-lg overflow-hidden">
+            <div
+              className="absolute inset-0 bg-cover bg-center transition-all duration-1000"
+              style={{
+                backgroundImage: `url(${slides[currentSlide].image})`,
+              }}
+            ></div>
+          </div>
+        </div> */}
+      </section>
+    </div>
+  );
+};
+
+
+
+
+
+
 
   /* const Hero = () => {
     const slides = [

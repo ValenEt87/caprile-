@@ -168,7 +168,7 @@ const Services = () => {
   const duration = 3000; // Duración del contador ajustada
 
   return (
-    <section className="grid grid-cols-12 mx-5 pb-32 pt-24 gap-5">
+    <section className="grid grid-cols-12 mx-5 pb-24 pt-24 gap-5">
       <h2 className="sr-only">Nuestros valores</h2>
 
       <div

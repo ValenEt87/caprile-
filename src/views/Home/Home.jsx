@@ -290,9 +290,9 @@ const Home = () => {
                 <div
                     className="col-span-12 lg:col-span-10 lg:col-start-2 lg:col-span-5 lg:col-start-2 px-2 flex flex-col items-center"
                     data-aos="fade-up"
-                    data-aos-duration="1000"
+                    data-aos-duration="500"
                     data-aos-easing="ease-in-out"
-                    data-aos-delay="0"
+                    data-aos-delay="100"
                 >
                     {/* <div className="grid grid-cols-2 gap-5">
                     <div className="lg:h-72 lg:w-72 rounded-lg overflow-hidden mx-auto">
@@ -342,7 +342,7 @@ const Home = () => {
                         </defs>
                         <path d="M975.2,119.57c-157.3-58.66-319.79-88.72-487.61-88C320.44,32.35,158,60.14,1.23,119.71a.75.75,0,0,1-1-.49l-.1-.34A.75.75,0,0,1,.51,118c3.73-2.08,7.42-4.23,11.2-6.21C50.11,91.7,90,75.1,130.91,60.78,181.24,43.15,232.55,29,285,19.59c31.37-5.63,63-10,94.64-13.78C421.32.85,463.23-.55,505.18.18A1096,1096,0,0,1,625.52,8.9,1071.71,1071.71,0,0,1,886.23,76,753,753,0,0,1,971.74,116c1.15.63,2.26,1.33,3.38,2a.74.74,0,0,1,.32.87Z" />
                     </svg> */}
-                    <div className='col-span-10 col-start-2 lg:col-start-2 lg:col-span-5 rounded-lg lg:mb-0' data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="0">
+                    <div className='col-span-10 col-start-2 lg:col-start-2 lg:col-span-5 rounded-lg lg:mb-0' data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="0">
                     <img src="/imgs/Historia 6.jpg" alt="" className='rounded-lg' />
                 </div>
                 </div>
@@ -351,9 +351,9 @@ const Home = () => {
                 <div
                     className="col-span-12 lg:col-span-10 lg:col-start-2 lg:col-start-7 lg:col-span-5 px-2"
                     data-aos="fade-up"
-                    data-aos-duration="1000"
+                    data-aos-duration="500"
                     data-aos-easing="ease-in-out"
-                    data-aos-delay="300"
+                    data-aos-delay="100"
                 >
                     {/* <h2 className="text-lg font-medium text-gray-500">Más de 50 años y tres generaciones</h2> */}
                     <h3 className="text-xl lg:text-4xl font-medium mb-3">
@@ -475,14 +475,14 @@ const Home = () => {
                 </section> */}
 
 
-                <section className="bg-green-900 text-white lg:relative lg:h-[650px] bg-services bg-fixed">
+                <section className="bg-green-950 text-white lg:relative lg:h-[700px] bg-services bg-fixed mx-6 rounded-2xl my-20">
                     <div className="grid grid-cols-12 gap-4 px-4 py-6 lg:py-0 items-center h-full lg:relative">
                         
                         <div className="col-span-10 col-start-2 col lg:col-start-2 lg:col-span-4 text-center lg:text-start">
-                            <h2 className="text-2xl lg:text-4xl font-medium mb-2">Contactanos</h2>
+                            <h2 className="text-2xl lg:text-4xl font-medium mb-2">Completá el formulario</h2>
                             <p className="lg:text-lg mb-4">
-                               Completá el formulario a continuación y nos pondremos en contacto,
-                               o escribinos en nuestras redes sociales.
+                               Escribinos y nos pondremos en contacto,
+                               o visitá nuestras redes sociales.
                             </p>
                             {/* <div className="flex space-x-2">
                                 <a

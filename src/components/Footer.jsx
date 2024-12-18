@@ -5,7 +5,7 @@ const Footer = () => {
 
   return (
     <footer className="dark:bg-gray-900 pt-10 lg:pt-16">
-        <div className="2xl:mx-auto w-full py-3 grid grid-cols-12 md:gap-5 gap-2 lg:mx-5 justify-items-center">
+        <div className="2xl:mx-auto w-full pb-10 grid grid-cols-12 md:gap-5 gap-2 lg:mx-5 justify-items-center">
             <div className="mb-6 md:mb-0 col-span-12 lg:col-span-4 md:col-start-2 md:col-span-10">
                 <a href="#" className="flex items-center mb-2">
                     <img src="./logo.svg" alt="logo de Caprile Golf" className="max-w-48" />
@@ -121,7 +121,7 @@ const Footer = () => {
                 </span>
             </div>
         </div>
-        <div className="col-span-12 bg-green-700 py-1 text-white text-center text-sm flex justify-center items-center gap-2">
+        <div className="col-span-12 bg-green-950 py-1 text-white text-center text-sm flex justify-center items-center gap-2">
             <span>Hecho a través de</span>
             {/* <a href="#"><img src="/public/logo-alba.svg" alt="logo de Alba" className="w-4" /></a> */}
             <a href="#"><img src="/public/rb_1605.svg" alt="logo de Alba" className="w-4" /></a>
