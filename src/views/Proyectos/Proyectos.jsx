@@ -412,7 +412,7 @@ const Proyectos = () => {
   return (
     <>
       <Navbar />
-      <section className="mx-5 pb-28 pt-28 grid grid-cols-12">
+      <section className="pt-20 lg:py-28 grid grid-cols-12">
         {/* <div className="col-span-12 flex justify-center">
           <svg
             id="Capa_1"

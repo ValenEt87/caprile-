@@ -205,12 +205,12 @@ body{
 }
 
 .navbar-bg .nav-link.text-white {
-  color: white;
+  color: #FCF5EB;
 }
 
-/* .navbar-bg{
-  background-color: rgba(252, 245, 235, .8);
-} */
+.navbar-bg{
+  background-color: rgba(252, 245, 235, .9);
+}
 
 .hover-unfilled-buttons:hover{
   color: var(--color4);
@@ -315,7 +315,6 @@ button:focus {
 .accordion-item {
   border: .5px solid #113B21;
   border-radius: 8px;
-  background-color: #fff;
   margin-bottom: 8px;
   overflow: hidden;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
@@ -358,23 +357,21 @@ button:focus {
   transform: rotate(180deg);
 }
 
-/* Cuerpo del acordeón */
 .accordion-body {
-  padding: 1.2rem;
-  background-color: #FCF5EB; /* Fondo más claro para el cuerpo */
-  display: none; /* Por defecto, oculto */
-  opacity: 0;
+  background-color: #FCF5EB;
   max-height: 0;
+  padding: 0;
+  opacity: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
 }
 
-/* Cuando el cuerpo del acordeón está activo (visible) */
 .accordion-body.active {
-  display: block;
+  max-height: 500px; /* Ajusta este valor según el contenido */
   opacity: 1;
-  max-height: 500px; /* Establece un valor de altura máxima, ajusta según el contenido */
+  padding: 1.2rem;
 }
+
 
 /* Estilos de la lista dentro del acordeón */
 .accordion-body ul {
@@ -387,7 +384,7 @@ button:focus {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 17px;
+  font-size: 16px;
   margin-bottom: 8px;
   color: #333;
   font-weight: 500;

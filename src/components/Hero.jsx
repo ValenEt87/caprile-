@@ -96,16 +96,16 @@ import React from 'react'
 
   return (
     <div className=" text-white">
-      <section className="grid grid-cols-12 gap-5 rounded-xl mt-16 mx-6 items-center h-[720px] bg-hero bg-fixed">
+      <section className="grid grid-cols-12 mt-16 lg:mt-20 mx-5 lg:mx-8 items-center h-[670px] lg:h-[720px] bg-hero bg-fixed">
         {/* Título Fijo Izquierdo */}
-        <div className="col-span-12 col-start-2 lg:col-start-2 md:col-span-5 space-y-6">
-          <h1 className="text-4xl md:text-5xl lg:text-7xl font-medium">
+        <div className="col-span-10 col-start-2 lg:col-start-2 md:col-span-5 space-y-6">
+          <h1 className="text-5xl lg:text-7xl font-medium">
             Golf Course Design & Construction
           </h1>
-          <p className="text-lg font-normal lg:text-xl lg:pr-28">
+          <p className="text-base font-normal lg:text-lg lg:pr-28">
             Más de 50 años y tres generaciones construyendo y remodelando campos de golf.
           </p>
-          <div className="flex items-center gap-3">
+          <div className="flex items-center md:gap-3">
             <a
               href="#contacto"
               className="font-bold bg-green-950 transition duration-300 ease-in-out rounded-md text-base py-3 px-6 lg:px-8 hover:bg-green-900"
@@ -114,21 +114,11 @@ import React from 'react'
             </a>
             <a
               href="#proyectos"
-              className="text-white font-bold bg-transparent transition duration-300 ease-in-out rounded-md text-base py-3 px-6 flex items-center gap-2"
+              className="sr-only md:not-sr-only text-white font-bold bg-white bg-opacity-25 transition duration-300 ease-in-out rounded-md text-base py-3 px-6 lg:px-8 lg:py-3 flex items-center gap-1"
             >
               Ver proyectos
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                fill="currentColor"
-                className="bi bi-chevron-down"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
-                />
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4"/>
               </svg>
             </a>
           </div>

@@ -250,9 +250,9 @@ const Home = () => {
                 </div>
             </section> */}
             
-            <section className="grid grid-cols-12 mx-5 pb-24 pt-24 gap-5 items-center">
+            <section className="grid grid-cols-12 mx-5 pb-20 pt-12 lg:pt-24 gap-5 items-center">
                 {/* Contenedor de las imágenes */}
-                <div className="lg:col-span-10 lg:col-start-2 col-span-12 flex flex-col items-center justify-center">
+                {/* <div className="lg:col-span-10 lg:col-start-2 col-span-12 flex flex-col items-center justify-center"> */}
                     {/* <svg
                     id="Capa_1"
                     data-name="Capa 1"
@@ -286,9 +286,9 @@ const Home = () => {
                     <h2 className="sr-only">Sobre nosotros</h2>
                     {/* <p className='lg:text-lg mb-3 text-center'>Más de 50 años y tres generaciones construyendo y remodelando campos de golf.
                     </p> */}
-                </div>
+                {/* </div> */}
                 <div
-                    className="col-span-12 lg:col-span-10 lg:col-start-2 lg:col-span-5 lg:col-start-2 px-2 flex flex-col items-center"
+                    className="col-span-12 lg:col-span-10 lg:col-start-2 lg:col-span-5 lg:col-start-2 lg:px-2 flex flex-col items-center"
                     data-aos="fade-up"
                     data-aos-duration="500"
                     data-aos-easing="ease-in-out"
@@ -356,7 +356,7 @@ const Home = () => {
                     data-aos-delay="100"
                 >
                     {/* <h2 className="text-lg font-medium text-gray-500">Más de 50 años y tres generaciones</h2> */}
-                    <h3 className="text-xl lg:text-4xl font-medium mb-3">
+                    <h3 className="text-3xl lg:text-4xl font-medium mb-3">
                     Hemos trabajado en numerosas canchas de Argentina, Chile, Uruguay y Brasil.
                     </h3>
                    {/*  <h3 className="lg:text-3xl text-xl mb-2 font-bold">
@@ -367,7 +367,7 @@ const Home = () => {
                         colaboración o en la ejecución de proyectos de otros diseñadores como Ken
                         Dye, Bob Cupp, Gary Player Design y American Golf Design, entre otros.
                     </p>
-                    <div className="mt-4 lg:mt-6 flex justify-center md:justify-start gap-2">
+                    <div className="mt-4 lg:mt-6 flex justify-start gap-2">
                     {/* <a
                         href="/sobre-nosotros"
                         className="w-full color-white-bmr bg-green-caprile py-3 px-6 lg:px-5 font-bold rounded-lg transition duration-300 ease-in-out flex items-center justify-between"
@@ -377,14 +377,20 @@ const Home = () => {
                             <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
                         </svg>
                     </a> */}
-                    <a href="/sobre-nosotros" className="font-medium hover:text-green-700 py-3 underline decoration-green-700 underline-offset-4 rounded-lg flex items-center gap-2">
-                        {/* <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+                    {/* <a href="/sobre-nosotros" className="font-medium hover:text-green-700 py-3 underline decoration-green-700 underline-offset-4 rounded-lg flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
                             <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
-                        </svg> */}
+                        </svg>
                         Sobre nosotros
                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
                         </svg>
+                    </a> */}
+                    <a
+                        href="/sobre-nosotros"
+                        className="bg-green-950 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-900 transition duration-500 flex items-center gap-2"
+                    >
+                        Sobre nosotros
                     </a>
                     {/* <a href="/sobre-nosotros" className="color-blue-bmr font-bold bg-neutral-200 hover:bg-green-900 py-3 px-6 lg:px-5 rounded-lg transition duration-300 ease-in-out">
                         Contactanos
@@ -475,11 +481,11 @@ const Home = () => {
                 </section> */}
 
 
-                <section className="bg-green-950 text-white lg:relative lg:h-[700px] bg-services bg-fixed mx-6 rounded-2xl my-20">
-                    <div className="grid grid-cols-12 gap-4 px-4 py-6 lg:py-0 items-center h-full lg:relative">
+                <section className="bg-green-950 text-white lg:relative lg:h-[700px] bg-services bg-fixed mx-5 lg:mx-8 rounded-2xl py-2 mb-10 lg:my-20">
+                    <div className="grid grid-cols-12 gap-4 px-5 py-6 lg:py-0 items-center h-full lg:relative">
                         
-                        <div className="col-span-10 col-start-2 col lg:col-start-2 lg:col-span-4 text-center lg:text-start">
-                            <h2 className="text-2xl lg:text-4xl font-medium mb-2">Completá el formulario</h2>
+                        <div className="col-span-12 col lg:col-start-2 lg:col-span-4 text-center text-start">
+                            <h2 className="text-3xl lg:text-5xl font-medium mb-2">Completá el formulario</h2>
                             <p className="lg:text-lg mb-4">
                                Escribinos y nos pondremos en contacto,
                                o visitá nuestras redes sociales.
@@ -513,7 +519,7 @@ const Home = () => {
                                     </svg>
                                 </a>
                             </div>  */}
-                            <div className="flex justify-center lg:justify-start space-x-2">
+                            <div className="flex justify-center lg:justify-start space-x-2 sr-only lg:not-sr-only">
                                 <a
                                     href="#"
                                     className="bg-green-600 bg-opacity-30 hover:bg-green-800 p-3 rounded-lg transition duration-300"
@@ -545,7 +551,7 @@ const Home = () => {
                         </div>
 
                         {/* Formulario */}
-                        <div className="col-span-10 col-start-2 lg:col-start-7 lg:col-span-5 bg-white-bmr text-gray-900 rounded-xl shadow-lg p-6 lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-top-30 w-full">
+                        <div className="col-span-12 lg:col-start-7 lg:col-span-5 bg-white-bmr text-gray-900 rounded-xl shadow-lg p-6 lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-top-30 w-full">
                             <form className="space-y-4">
                                 <div>
                                 <label htmlFor="name" className="block text-sm font-semibold mb-1">
@@ -594,7 +600,7 @@ const Home = () => {
                                 </div>
                                 <button
                                 type="submit"
-                                className="w-full bg-green-caprile text-white font-semibold py-3 rounded-lg hover:bg-green-800 transition duration-300"
+                                className="w-full bg-green-950 text-white font-semibold py-3 rounded-lg hover:bg-green-900 transition duration-300"
                                 >
                                     Enviar
                                 </button>
