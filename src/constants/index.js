@@ -11,7 +11,7 @@ export const golfCourses = [
     category: "Disenados-y-construidos",
     courses: [
       {
-        title: "Los Lagartos Country Club (Pilar, Bs As)",
+        title: "Ascochinga Golf Club (Córdoba)",
         coverImage: img1,
         images: [
           { src: img1, alt: "Vista aérea de Los Lagartos Country Club" },
@@ -20,7 +20,7 @@ export const golfCourses = [
         ]
       },
       {
-        title: "Mayling Club de Campo (Pilar, Buenos Aires)",
+        title: "Martindale Country Club (Pilar, Bs As)",
         coverImage: img2,
         images: [
           { src: img4, alt: "Vista panorámica de Mayling Club de Campo" },
@@ -29,7 +29,7 @@ export const golfCourses = [
         ]
       },
       {
-        title: "Martindale Country Club (Pilar, Bs As).",
+        title: "La Reserva (Camboriú, Brasil)",
         coverImage: img3,
         images: [
           { src: img4, alt: "Vista panorámica de Mayling Club de Campo" },
@@ -38,7 +38,7 @@ export const golfCourses = [
         ]
       },
       {
-        title: "Mayling Club de Campo (Pilar, Buenos Aires)",
+        title: "El Valle de Tandil (cc Arq. Marcos Capdepont)",
         coverImage: img4,
         images: [
           { src: img1, alt: "Vista aérea de Los Lagartos Country Club" },
@@ -47,7 +47,7 @@ export const golfCourses = [
         ]
       },
       {
-        title: "Mayling Club de Campo (Pilar, Buenos Aires)",
+        title: "La Rioja Golf Club - (La Rioja)",
         coverImage: img1,
         images: [
           { src: img4, alt: "Vista panorámica de Mayling Club de Campo" },
@@ -56,7 +56,7 @@ export const golfCourses = [
         ]
       },
       {
-        title: "Los Lagartos Country Club (Pilar, Bs As)",
+        title: "La Estancia de Cafayate (Salta) cc Arq. Bob Cupp",
         coverImage: img4,
         images: [
           { src: img4, alt: "Vista panorámica de Mayling Club de Campo" },
@@ -228,7 +228,7 @@ export const golfCourses = [
         ]
       },
       {
-        title: "Jockey Club Argentino",
+        title: "Cariló Golf Club (Buenos Aires)",
         coverImage: img2,
         images: [
           { src: img5, alt: "Vista del campo del Jockey Club en San Isidro" }
@@ -254,7 +254,7 @@ export const golfCourses = [
         ]
       },
       {
-        title: "Los Lagartos C.C. (Pilar, Buenos Aires)",
+        title: "EL Naional Golf Club (Gral Rodríguez, Buenos Aires)",
         coverImage: img1,
         images: [
           { src: img5, alt: "Campo principal de Los Lagartos Country Club" }

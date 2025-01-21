@@ -114,7 +114,7 @@ import React from 'react'
             </a>
             <a
               href="#proyectos"
-              className="sr-only md:not-sr-only text-white font-bold bg-white bg-opacity-25 transition duration-300 ease-in-out rounded-md text-base py-3 px-6 lg:px-8 lg:py-3 flex items-center gap-1"
+              className="sr-only md:not-sr-only text-white font-bold bg-white bg-opacity-25 transition duration-300 ease-in-out rounded-md text-base py-3 px-6 lg:px-4 lg:py-3 flex items-center"
             >
               Ver proyectos
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">

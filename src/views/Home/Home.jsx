@@ -399,7 +399,7 @@ const Home = () => {
                 </div>
                 </section>
             
-                {/* <TestimonialCarousel /> */}
+                <TestimonialCarousel />
 
 
                 {/* <section className="bg-green-900 text-white lg:h-dvh bg-services bg-fixed" id='contacto'>
@@ -481,7 +481,7 @@ const Home = () => {
                 </section> */}
 
 
-                <section className="bg-green-950 text-white lg:relative lg:h-[700px] bg-services bg-fixed mx-5 lg:mx-8 rounded-2xl py-2 mb-10 lg:my-20">
+                <section id='contacto' className="bg-green-950 text-white lg:relative lg:h-[700px] bg-services bg-fixed mx-5 lg:mx-8 rounded-2xl py-2 mb-10 lg:my-20">
                     <div className="grid grid-cols-12 gap-4 px-5 py-6 lg:py-0 items-center h-full lg:relative">
                         
                         <div className="col-span-12 col lg:col-start-2 lg:col-span-4 text-center text-start">
@@ -561,7 +561,7 @@ const Home = () => {
                                         type="text"
                                         id="name"
                                         className="w-full border border-gray-300 bg-white-bmr rounded-lg transition duration-300 px-4 py-3 text-sm"
-                                        placeholder="Nombre completo"
+                                        placeholder="Ej: Juan Pérez"
                                     />
                                 </div>
                                 <div>
@@ -572,7 +572,7 @@ const Home = () => {
                                         type="email"
                                         id="email"
                                         className="w-full border border-gray-300 bg-white-bmr rounded-lg transition duration-300 px-4 py-3 text-sm"
-                                        placeholder="Correo electrónico"
+                                        placeholder="Ej: juanperez@gmail.com"
                                     />
                                 </div>
                                 <div>
@@ -583,7 +583,7 @@ const Home = () => {
                                         type="text"
                                         id="phone"
                                         className="w-full border border-gray-300 bg-white-bmr rounded-lg transition duration-300 px-4 py-3 text-sm"
-                                        placeholder="Teléfono"
+                                        placeholder="Ej: +54 9 11 2222-3333"
                                     />
                                 </div>
                                 <div className='pb-0'>
@@ -594,7 +594,7 @@ const Home = () => {
                                         id="message"
                                         rows="4"
                                         className="w-full border border-gray-300 bg-white-bmr rounded-lg transition duration-300 px-4 py-2 text-sm"
-                                        placeholder="Mensaje"
+                                        placeholder="Ej: Hola Caprile..."
                                     >
                                     </textarea>
                                 </div>
@@ -608,120 +608,6 @@ const Home = () => {
                         </div>
                     </div>
                 </section>
-                {/* <section className="h-dvh grid grid-cols-12 bg-green-950 gap-5">
-                    <div
-                        className="col-span-12 lg:col-span-6 bg-cover bg-center"
-                        style={{
-                        backgroundImage: "url('../../../public/imgs/fondo.webp')",
-                        }}
-                    ></div>
-
-                    <div className="col-span-12 lg:col-span-6 flex items-center px-8 lg:px-16 py-12 lg:py-0">
-                        <div className=" text-gray-900 rounded-xl p-6 w-full">
-                        <h2 className="text-3xl font-bold text-white mb-4">Contáctanos</h2>
-                        <p className="text-lg mb-6 text-white">
-                            Completá el formulario a continuación y nos pondremos en contacto tan pronto como sea posible.
-                        </p>
-                        <form className="space-y-4">
-                            <div>
-                            <input
-                                type="text"
-                                id="name"
-                                className="w-full border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-green-500 focus:border-green-500 transition duration-300 px-4 py-3"
-                                placeholder="Nombre completo"
-                            />
-                            </div>
-                            <div>
-                            <input
-                                type="email"
-                                id="email"
-                                className="w-full border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-green-500 focus:border-green-500 transition duration-300 px-4 py-3"
-                                placeholder="Correo electrónico"
-                            />
-                            </div>
-                            <div>
-                            <input
-                                type="text"
-                                id="phone"
-                                className="w-full border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-green-500 focus:border-green-500 transition duration-300 px-4 py-3"
-                                placeholder="Teléfono"
-                            />
-                            </div>
-                            <div>
-                            <textarea
-                                id="message"
-                                rows="4"
-                                className="w-full border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-green-500 focus:border-green-500 transition duration-300 px-4 py-2"
-                                placeholder="Mensaje"
-                            ></textarea>
-                            </div>
-                            <button
-                            type="submit"
-                            className="w-full bg-yellow-600 text-green-900 font-semibold py-3 rounded-lg hover:bg-green-700 transition duration-300"
-                            >
-                            Enviar
-                            </button>
-                        </form>
-                        </div>
-                    </div>
-                    </section> */}
-{/* <section className="h-dvh grid grid-cols-12 bg-green-950 gap-5">
-  <div
-    className="col-span-12 lg:col-span-6 bg-cover bg-center"
-    style={{
-      backgroundImage: "url('../../../public/imgs/fondo.webp')",
-    }}
-  ></div>
-
-    <div className="col-span-12 lg:col-span-6 flex items-center px-8 lg:px-16 py-12 lg:py-0">
-        <div className="w-full">
-        <h2 className="text-3xl font-bold text-white mb-4">Contáctanos</h2>
-        <p className="text-lg mb-6 text-white">
-            Agendá una llamada de descubrimiento 100% gratuita con el equipo llenando el formulario a continuación.
-        </p>
-        <form className="space-y-4">
-            <div>
-            <input
-                type="text"
-                id="name"
-                className="w-full bg-transparent text-white placeholder-white border border-white rounded-lg shadow-sm focus:ring-2 focus:ring-white focus:border-white transition duration-300 px-4 py-3"
-                placeholder="Nombre completo"
-            />
-            </div>
-            <div>
-            <input
-                type="email"
-                id="email"
-                className="w-full bg-transparent text-white placeholder-white border border-white rounded-lg shadow-sm focus:ring-2 focus:ring-white focus:border-white transition duration-300 px-4 py-3"
-                placeholder="Correo electrónico"
-            />
-            </div>
-            <div>
-            <input
-                type="text"
-                id="phone"
-                className="w-full bg-transparent text-white placeholder-white border border-white rounded-lg shadow-sm focus:ring-2 focus:ring-white focus:border-white transition duration-300 px-4 py-3"
-                placeholder="Teléfono"
-            />
-            </div>
-            <div>
-            <textarea
-                id="message"
-                rows="4"
-                className="w-full bg-transparent text-white placeholder-white border border-white rounded-lg shadow-sm focus:ring-2 focus:ring-white focus:border-white transition duration-300 px-4 py-2"
-                placeholder="Mensaje"
-            ></textarea>
-            </div>
-            <button
-            type="submit"
-            className="w-full bg-yellow-600 text-green-900 font-bold py-3 rounded-lg hover:bg-green-500 transition duration-300"
-            >
-            Enviar
-            </button>
-        </form>
-        </div>
-    </div>
-    </section> */}
         {/* <ContactForm /> */}
         <Footer />
     </>

@@ -124,12 +124,12 @@ const ServiceSection = () => {
 
   return (
     <section className="py-8 lg:pb-20 lg:pt-28 bg-fixed bg-center bg-no-repeat grid grid-cols-12 mx-5 md:px-5 md:gap-5">
-      <div className="col-span-12 lg:col-span-4 lg:col-start-2 flex flex-col justify-center items-start order-2 lg:order-1">
+      <div className="col-span-12 lg:col-span-5 lg:col-start-2 flex flex-col justify-center items-start order-2 lg:order-1">
         <h2 className="text-3xl lg:text-5xl font-medium mb-2 text-green-950">
-          Nuestra experiencia optimiza sus costos y le brinda los mejores resultados.
+           Un buen diseño integra el paisaje existente con la cancha a construir.
         </h2>
         <p className="lg:text-lg mb-8 text-green-950">
-          Nuestra experiencia puede ayudarlo a optimiza sus costos y obtener los mejores resultados.
+        Nuestra experiencia puede ayudarlo a optimizar sus costos y obtener los mejores resultados. Contamos con un personal altamente capacitado, junto con proyectistas, ingenieros y directores de obra.
         </p>
         <a
           href="#contacto"

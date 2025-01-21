@@ -122,6 +122,13 @@ const About_us = () => {
                         <p className='px-5 text-center text-gray-900 dark:text-white font-medium'>Urbanizaciones y desarrollos inmobiliarios</p>
                     </div>
                 </div>
+                <div className="w-full max-w-sm rounded-lg dark:bg-gray-800 dark:border-gray-700">
+                    <div className="flex flex-col items-center py-5">
+                        <img className="w-24 h-24 mb-1 rounded-full shadow-lg" src="https://icons.veryicon.com/png/o/system/crm-android-app-icon/app-icon-person.png" alt=""/>
+                        <h3 className="mb-1 text-xl font-bold text-gray-900 dark:text-white">Luca Caprile</h3>
+                        <p className='px-5 text-center text-gray-900 dark:text-white font-medium'>Urbanizaciones y desarrollos inmobiliarios</p>
+                    </div>
+                </div>
               </div>
             {/* <div className='col-start-4 col-span-6 flex justify-center'>
               <a href='#' className="text-white bg-green-caprile py-3 px-6 lg:px-5 font-bold rounded-lg text-center transition duration-300 ease-in-out w-full" target='_blank'>

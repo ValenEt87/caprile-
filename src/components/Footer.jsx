@@ -6,15 +6,22 @@ const Footer = () => {
   return (
     <footer className="dark:bg-gray-900 pt-10 lg:pt-16">
         <div className="2xl:mx-auto w-full pb-10 grid grid-cols-12 md:gap-5 gap-2 lg:mx-5 justify-items-center">
-            <div className="mb-6 md:mb-0 col-span-12 lg:col-span-4 md:col-start-2 md:col-span-10">
-                <a href="#" className="flex items-center mb-2">
+            <div className="mb-6 md:mb-0 col-span-12 lg:col-span-4 lg:col-start-2 md:col-start-2 md:col-span-10">
+                {/* <a href="#" className="flex items-center mb-2">
                     <img src="./logo.svg" alt="logo de Caprile Golf" className="max-w-48" />
                 </a>
                 <div className="mb-4">
                     <span>
                         Golf Course Design & Construction.
                     </span>
-                </div>
+                </div> */}
+                <svg className="w-7 h-7 mx-auto mb-3 text-gray-400 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
+                    <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z"/>
+                </svg>
+                <h3 className="text-3xl lg:text-2xl italic font-medium mb-3 text-center">
+                    Una cancha de golf debería verse como si hubiera estado ahí desde que el hombre piso estas pampas.
+                </h3>
+                <p className="font-medium text-center">Diego Caprile</p>
                 {/* <div className="flex justify-center lg:justify-start space-x-2">
                     <a
                         href="#"
@@ -79,7 +86,7 @@ const Footer = () => {
                     <span className="font-bold color-blue-bmr">Contactanos</span>
                     <ul className="text-slate-300 font-medium mt-3">
                         <li className="mb-4">
-                            <a href="mailto:info@caprilegolf.com.ar" className="nav-link flex items-center truncate">
+                            <a href="mailto:info@caprilegolf.com.ar" target="_blank" className="nav-link flex items-center truncate">
                                 {/* <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right mr-1" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"/>
                                 </svg> */}
@@ -90,7 +97,7 @@ const Footer = () => {
                             </a>
                         </li>
                         <li className="mb-4">
-                            <a href="tel:+549112396-9144" aria-label="Llamar a la empresa" className="nav-link flex items-center">
+                            <a href="tel:+549112396-9144" aria-label="Llamar a la empresa" target="_blank" className="nav-link flex items-center">
                                 {/* <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-up-right mr-1" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"/>
                                 </svg> */}
@@ -101,7 +108,7 @@ const Footer = () => {
                             </a>
                         </li>
                         <li>
-                            <a href="#" className="nav-link flex items-center">
+                            <a href="https://maps.app.goo.gl/5PTrYcmnMiFuJkB88" target="_blank" className="nav-link flex items-center">
                                 {/* <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-up-right mr-1" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"/>
                                 </svg> */}
@@ -109,7 +116,7 @@ const Footer = () => {
                                     <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
                                     <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
                                 </svg>
-                                Calcagno 392, San Isidro
+                                Monseñor Calcagno 392, San Isidro
                             </a>
                         </li>
                     </ul>
@@ -117,7 +124,7 @@ const Footer = () => {
             </div>
             {/* <hr className="my-6 border-neutral-600 sm:mx-auto dark:border-gray-700 lg:my-8 col-span-12" /> */}
             <div className="sm:flex sm:items-center sm:justify-between text-center col-span-12 mt-9">
-                <span className="text-sm text-gray-700 sm:text-center dark:text-gray-400 w-full">© 2024 <a href="#" className="hover:underline">Caprile Golf</a>. Todos los derechos reservados.
+                <span className="text-sm text-gray-700 sm:text-center dark:text-gray-400 w-full">© 2025 <a href="#" className="hover:underline">Caprile Golf</a>. Todos los derechos reservados.
                 </span>
             </div>
         </div>

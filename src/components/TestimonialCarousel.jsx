@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 const TestimonialCarousel = () => {
   return (
-    <section className="bg-gray-50 py-16 mb-20 px-5 lg:px-20">
+    <section className="py-16 mb-20 px-5 lg:px-20">
       <div className="max-w-screen-xl mx-auto grid grid-cols-12 gap-8">
         {/* Texto */}
         <div className="col-span-12 lg:col-span-6 flex flex-col justify-center space-y-6 order-2 lg:order-1">
@@ -20,7 +20,7 @@ const TestimonialCarousel = () => {
             "Diseñar campos de golf no es solo un arte, sino un legado para las
             futuras generaciones." - Gary Player
           </blockquote>
-          <a
+          {/* <a
             href="#contacto"
             className="inline-block bg-green-950 text-white font-semibold py-3 px-6 rounded-lg hover:bg-green-700 transition duration-300 flex items-center justify-between"
           >
@@ -28,7 +28,7 @@ const TestimonialCarousel = () => {
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-down-right" viewBox="0 0 16 16">
               <path fill-rule="evenodd" d="M14 13.5a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1 0-1h4.793L2.146 2.854a.5.5 0 1 1 .708-.708L13 12.293V7.5a.5.5 0 0 1 1 0z"/>
             </svg>
-          </a>
+          </a> */}
         </div>
 
         {/* Imagen */}
