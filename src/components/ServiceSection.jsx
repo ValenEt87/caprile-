@@ -125,7 +125,7 @@ const ServiceSection = () => {
   return (
     <section className="py-8 lg:pb-20 lg:pt-28 bg-fixed bg-center bg-no-repeat grid grid-cols-12 mx-5 md:px-5 md:gap-5">
       <div className="col-span-12 lg:col-span-5 lg:col-start-2 flex flex-col justify-center items-start order-2 lg:order-1">
-        <h2 className="text-3xl lg:text-5xl font-medium mb-2 text-green-950">
+        <h2 className="text-3xl lg:text-5xl font-medium mb-3 text-green-950">
            Un buen diseño integra el paisaje existente con la cancha a construir.
         </h2>
         <p className="lg:text-lg mb-8 text-green-950">
