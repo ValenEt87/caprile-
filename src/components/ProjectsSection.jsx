@@ -455,7 +455,7 @@ const ProjectsSection = () => {
         ))} */}
         {Object.keys(projectsByCategory).map((category, idx) => (
           <div key={idx} className="mb-12 col-span-12 lg:col-span-10 lg:col-start-2" data-aos="fade-up">
-            <div className="flex justify-between items-center mb-3">
+            <div className="flex justify-between items-center mb-3 border border-neutral-200">
               <h3 className="text-xl font-medium">{formatCategoryTitle(category)}</h3>
               <a
                 href={`/proyectos?categoria=${category.toLowerCase().replace(/ /g, "-")}`}
