@@ -356,7 +356,7 @@ const Home = () => {
                     data-aos-delay="100"
                 >
                     {/* <h2 className="text-lg font-medium text-gray-500">Más de 50 años y tres generaciones</h2> */}
-                    <h3 className="text-3xl lg:text-5xl font-medium mb-3 text-green-950">
+                    <h3 className="text-3xl lg:text-5xl font-medium mb-3">
                     Hemos trabajado en numerosas canchas de Argentina, Chile, Uruguay y Brasil.
                     </h3>
                    {/*  <h3 className="lg:text-3xl text-xl mb-2 font-bold">
