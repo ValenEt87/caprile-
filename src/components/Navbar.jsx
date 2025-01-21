@@ -174,7 +174,7 @@ const Navbar = () => {
                 <a
                   href="#contacto"
                   activeClassName="text-green-800"
-                  className={`py-2 px-3 font-semibold nav-link rounded md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 ${
+                  className={`py-2 px-3 lg:py-2 lg:px-3 font-semibold nav-link bg-green-950 text-white rounded-md md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 ${
                     location.pathname === '/sobre-nosotros'
                       ? 'text-green-800'
                       : 'text-gray-500'
