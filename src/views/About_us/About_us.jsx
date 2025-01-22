@@ -63,7 +63,7 @@ const About_us = () => {
             <div className='col-span-10 col-start-7 lg:col-span-5 lg:col-start-7'>
             <div className="rounded-lg overflow-hidden mx-auto">
                 <img
-                src="https://www.invitedclubs.com/globalassets/the-national-golf-club/_images/photoshelter-2023/the-national_golf_main_dji_0514_1920_1200.jpg?format=webp"
+                src="/public/imgs/3generaciones.jpg"
                 alt="Proyecto 1"
                 className="object-cover w-full h-full"
                 />
@@ -136,7 +136,7 @@ const About_us = () => {
               </a>
             </div> */}
         </div>
-        {/* <ContactForm /> */}
+        <ContactForm />
         <Footer />
     </>
   )
