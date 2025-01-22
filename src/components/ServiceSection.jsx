@@ -1,54 +1,5 @@
 import React, { useState } from "react";
 
-// Acordeón individual
-/* const Accordion = ({ title, items }) => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleAccordion = () => {
-    setIsOpen(!isOpen);
-  };
-
-  return (
-    <div className={`accordion-item ${isOpen ? "active" : ""}`}>
-      <div
-        className={`accordion-header ${isOpen ? "active" : ""} flex justify-between items-center p-4 cursor-pointer`}
-        onClick={toggleAccordion}
-      >
-        <h3 className="font-medium text-lg text-white">{title}</h3>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth="1.5"
-          stroke="currentColor"
-          className={`w-6 h-6 transition-transform duration-300 ${isOpen ? "rotate-180" : "rotate-0"}`}
-        >
-          <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-        </svg>
-      </div>
-      <div className={`accordion-body ${isOpen ? "active" : ""}`}>
-        <ul className="list-none">
-          {items.map((item, index) => (
-            <li key={index} className="flex items-center gap-2 mb-2 text-sm text-gray-700">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                className="text-green-500"
-                viewBox="0 0 16 16"
-              >
-                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
-                <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
-              </svg>
-              {item}
-            </li>
-          ))}
-        </ul>
-      </div>
-    </div>
-  );
-}; */
 const Accordion = ({ title, items, isOpen, onClick }) => (
   <div className={`accordion-item ${isOpen ? "active" : ""}`}>
     <div
@@ -116,7 +67,7 @@ const ServiceSection = () => {
     },
   ];
 
-  const [openIndex, setOpenIndex] = useState(0); // El primer acordeón estará abierto por defecto.
+  const [openIndex, setOpenIndex] = useState(1); // El segundo acordeón estará abierto por defecto.
 
   const handleAccordionClick = (index) => {
     setOpenIndex(openIndex === index ? -1 : index); // Abre/cierra el acordeón.
