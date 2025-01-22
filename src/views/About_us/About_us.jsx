@@ -47,13 +47,13 @@ const About_us = () => {
             </div>
           </div>
           <div className='col-span-12 lg:col-start-7 lg:col-span-5' data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-out">
-                <h2 className='text-xl md:text-xl lg:text-2xl font-bold color-black-bmr lg:mb-3'>Conocé nuestra historia</h2>
+                <h2 className='text-xl md:text-xl lg:text-3xl font-bold color-black-bmr lg:mb-3'>Conocé nuestra historia</h2>
                 <p className='lg:text-lg'>
                   A fines de los años 60, los hermanos Diego y Alberto Caprile, hasta entonces productores agropecuarios y entusiastas jugadores, deciden diseñar y construir su primer campo de golf y urbanización en las proximidades de Buenos Aires. Luego del éxito de este desafío y acompañando el crecimiento de este deporte en nuestro país comienza a tomar forma nuestra empresa. A partir de entonces, fuimos sumando experiencia, incorporando personal especializado y equipos de construcción.
                 </p>
           </div>
           <div className='col-span-12 lg:col-start-2 lg:col-span-5' data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-out">
-                <h2 className='text-xl md:text-xl lg:text-2xl font-bold lg:mb-3'>Y nuestra actualidad</h2>
+                <h2 className='text-xl md:text-xl lg:text-3xl font-bold lg:mb-3'>Y nuestra actualidad</h2>
                 <p className='lg:text-lg'>
                   Hoy, a más de 50 años de aquellos comienzos, nuestra empresa se encuentra entre las más reconocidas del país y hemos trabajado en numerosas canchas de Argentina, Chile, Uruguay y Brasil. Muchos de estos proyectos fueron con diseño propio y otros en colaboración o en la ejecución de proyectos de otros diseñadores como Ken Dye, Bob Cupp, Gary Player Design y American Golf Design, entre otros.
 
@@ -136,7 +136,7 @@ const About_us = () => {
               </a>
             </div> */}
         </div>
-        <ContactForm />
+        {/* <ContactForm /> */}
         <Footer />
     </>
   )

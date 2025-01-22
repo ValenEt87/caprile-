@@ -221,7 +221,7 @@ export const golfCourses = [
     category: "Remodelados-e-intervenidos",
     courses: [
       {
-        title: "Jockey Club Argentino (San Isidro, Buenos Aires)",
+        title: "Jockey Club Argentino (San Isidro, Bs As)",
         coverImage: img1,
         images: [
           { src: img5, alt: "Vista del campo del Jockey Club en San Isidro" }
@@ -254,7 +254,7 @@ export const golfCourses = [
         ]
       },
       {
-        title: "EL Naional Golf Club (Gral Rodríguez, Buenos Aires)",
+        title: "EL Nacional Golf Club (Gral Rodríguez, Bs As)",
         coverImage: img1,
         images: [
           { src: img5, alt: "Campo principal de Los Lagartos Country Club" }

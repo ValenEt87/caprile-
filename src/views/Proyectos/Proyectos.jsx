@@ -351,7 +351,7 @@ const Proyectos = () => {
   const selectedCategory = queryParams.get("categoria");
 
   const [projects, setProjects] = useState([]);
-  const [categoryTitle, setCategoryTitle] = useState(""); // Nuevo estado para almacenar el título de la categoría
+  const [categoryTitle, setCategoryTitle] = useState("");
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [currentImages, setCurrentImages] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -371,11 +371,11 @@ const Proyectos = () => {
     if (filteredCategory) {
       setProjects(filteredCategory.courses);
       setCategoryTitle(
-        filteredCategory.category.replace(/-/g, " ") // Formatea el título
+        filteredCategory.category.replace(/-/g, " ")
       );
     } else {
       setProjects([]);
-      setCategoryTitle(""); // Resetea el título si no hay categoría válida
+      setCategoryTitle("");
     }
   }, [selectedCategory]);
 
@@ -457,7 +457,7 @@ const Proyectos = () => {
           onPrevious={goToPrevious}
         />
       )}
-      <ContactForm />
+      {/* <ContactForm /> */}
       <Footer />
     </>
   );
@@ -481,19 +481,6 @@ const Category = ({ projects, onCardClick }) => {
   );
 };
 
-/* const ProjectCard = ({ title, coverImage, images, onClick }) => {
-  return (
-    <div
-      onClick={() => onClick(images)}
-      className="bg-cover bg-center h-48 rounded-lg overflow-hidden relative cursor-pointer"
-      style={{ backgroundImage: `url(${coverImage})` }}
-    >
-      <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 p-4 text-white">
-        <h4 className="font-semibold">{title}</h4>
-      </div>
-    </div>
-  );
-}; */
 const ProjectCard = ({ title, coverImage, images, onClick }) => {
   return (
     <div
