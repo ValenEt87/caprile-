@@ -40,7 +40,7 @@ const About_us = () => {
           <div className='col-span-12 lg:col-span-5 lg:col-start-2 pb-3'>
             <div className="rounded-lg overflow-hidden mx-auto">
                 <img
-                src="/public/imgs/Historia 6.jpg"
+                src="/public/imgs/Nosotros/Historia 6.webp"
                 alt="Proyecto 1"
                 className="object-cover w-full h-full"
                 />
@@ -61,7 +61,7 @@ const About_us = () => {
             <div className='col-span-10 col-start-7 lg:col-span-5 lg:col-start-7'>
             <div className="rounded-lg overflow-hidden mx-auto">
                 <img
-                src="/public/imgs/3generaciones.jpg"
+                src="/public/imgs/Nosotros/3generaciones.webp"
                 alt="Proyecto 1"
                 className="object-cover w-full h-full"
                 />
