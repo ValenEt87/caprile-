@@ -34,7 +34,7 @@ import img20 from "../../public/imgs/urbanizaciones/lacheltonia.webp";
 
 export const golfCourses = [
   {
-    category: "Disenados-y-construidos",
+    category: "Diseñados-y-construidos",
     courses: [
       {
         title: "Ascochinga Golf Club (Córdoba)",

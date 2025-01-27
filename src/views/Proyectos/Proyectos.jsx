@@ -360,25 +360,29 @@ const Proyectos = () => {
 
   useEffect(() => {
     const normalizedCategory = selectedCategory
-      ? selectedCategory.toLowerCase().replace(/ /g, "-")
+      ? selectedCategory.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ /g, "-")
       : "";
 
-    const filteredCategory = golfCourses.find(
-      (course) =>
-        course.category.toLowerCase().replace(/ /g, "-") === normalizedCategory
-    );
+      const collator = new Intl.Collator("es", { sensitivity: "base" });
 
-    if (filteredCategory) {
-      setProjects(filteredCategory.courses);
-      setCategoryTitle(
-        filteredCategory.category.replace(/-/g, " ")
+      const filteredCategory = golfCourses.find((course) =>
+        collator.compare(
+          course.category.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ /g, "-"),
+          normalizedCategory
+        ) === 0
       );
-    } else {
-      setProjects([]);
-      setCategoryTitle("");
-    }
-  }, [selectedCategory]);
 
+      if (filteredCategory) {
+        setProjects(filteredCategory.courses);
+        setCategoryTitle(
+          filteredCategory.category.replace(/-/g, " ")
+        );
+      } else {
+        setProjects([]);
+        setCategoryTitle("");
+      }
+    }, [selectedCategory]);
+    
   const openLightbox = (images, title, index = 0) => {
     setCurrentImages(images);
     setCurrentIndex(index);
