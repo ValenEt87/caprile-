@@ -82,12 +82,22 @@ const ProjectsSection = () => {
           <div key={idx} className="mb-12 col-span-12 lg:col-span-10 lg:col-start-2" data-aos="fade-up">
             <div className="flex justify-between items-center mb-3">
               <h3 className="text-xl font-medium">{formatCategoryTitle(category)}</h3>
-              <a
+             {/*  <a
                 href={`/proyectos?categoria=${category.toLowerCase().replace(/ /g, "-")}`}
                 className="color-blue-bmr font-bold hover:underline text-sm lg:text-base"
               >
                 Ver todos &#x279C;
+              </a> */}
+              <a
+                href={`/proyectos?categoria=${category.toLowerCase().replace(/ /g, "-")}`}
+                className="relative color-blue-bmr font-bold text-sm lg:text-base group"
+              >
+                Ver todos &#x279C;
+                <span
+                  className="absolute left-0 bottom-0 w-0 h-[2px] bg-green-900 transition-all duration-300 ease-in-out group-hover:w-full"
+                ></span>
               </a>
+
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-5">
               {projectsByCategory[category].map((project, index) => (

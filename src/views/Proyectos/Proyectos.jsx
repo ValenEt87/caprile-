@@ -461,7 +461,7 @@ const Proyectos = () => {
           onPrevious={goToPrevious}
         />
       )}
-      {/* <ContactForm /> */}
+      <ContactForm />
       <Footer />
     </>
   );
