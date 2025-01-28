@@ -6,7 +6,7 @@ const TestimonialCarousel = () => {
       <div className="max-w-screen-xl mx-auto grid grid-cols-12 gap-8">
         {/* Texto */}
         <div className="col-span-12 lg:col-span-6 flex flex-col justify-center space-y-6 order-2 lg:order-1">
-          <h2 className="text-3xl lg:text-5xl font-bold">
+          <h2 className="text-3xl lg:text-5xl font-medium">
             Representantes exclusivos para Latinoamérica
           </h2>
           <p className="text-lg text-gray-700">

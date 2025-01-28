@@ -108,13 +108,13 @@ import React from 'react'
           <div className="flex items-center md:gap-3">
             <a
               href="#contacto"
-              className="font-bold bg-green-950 transition duration-300 ease-in-out rounded-md text-base py-3 px-6 lg:px-8 hover:bg-green-900"
+              className="font-bold bg-green-950 transition duration-300 ease-in-out rounded-lg text-base py-3 px-6 lg:px-6 hover:bg-green-900"
             >
               Contactanos
             </a>
             <a
               href="#proyectos"
-              className="sr-only md:not-sr-only text-white font-bold bg-white bg-opacity-25 transition duration-300 ease-in-out rounded-md text-base py-3 px-6 lg:px-4 lg:py-3 flex items-center"
+              className="sr-only md:not-sr-only text-white font-bold bg-white bg-opacity-25 transition duration-300 ease-in-out rounded-lg text-base py-3 px-6 lg:px-4 lg:py-3 flex items-center"
             >
               Ver proyectos
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
