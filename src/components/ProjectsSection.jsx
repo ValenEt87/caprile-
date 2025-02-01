@@ -55,7 +55,7 @@ const ProjectsSection = () => {
 
   return (
     <>
-      <section className="mx-5 grid grid-cols-12" data-aos="fade-up">
+      <section className="mx-5 grid grid-cols-12">
         <div className="lg:col-span-10 lg:col-start-2 col-span-12 flex flex-col lg:items-center lg:justify-center">
         {/*   <svg
             id="Capa_1"
@@ -75,11 +75,11 @@ const ProjectsSection = () => {
             </defs>
             <path d="M975.2,119.57c-157.3-58.66-319.79-88.72-487.61-88C320.44,32.35,158,60.14,1.23,119.71a.75.75,0,0,1-1-.49l-.1-.34A.75.75,0,0,1,.51,118c3.73-2.08,7.42-4.23,11.2-6.21C50.11,91.7,90,75.1,130.91,60.78,181.24,43.15,232.55,29,285,19.59c31.37-5.63,63-10,94.64-13.78C421.32.85,463.23-.55,505.18.18A1096,1096,0,0,1,625.52,8.9,1071.71,1071.71,0,0,1,886.23,76,753,753,0,0,1,971.74,116c1.15.63,2.26,1.33,3.38,2a.74.74,0,0,1,.32.87Z" />
           </svg> */}
-          <h2 className="text-3xl lg:text-4xl font-medium mb-6">Proyectos desarrollados</h2>
+          <h2 className="text-3xl lg:text-4xl font-medium mb-6" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-out">Proyectos desarrollados</h2>
         </div>
 
         {Object.keys(projectsByCategory).map((category, idx) => (
-          <div key={idx} className="mb-12 col-span-12 lg:col-span-10 lg:col-start-2" data-aos="fade-up">
+          <div key={idx} className="mb-12 col-span-12 lg:col-span-10 lg:col-start-2" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-out">
             <div className="flex justify-between items-center mb-3">
               <h3 className="text-xl font-medium">{formatCategoryTitle(category)}</h3>
              {/*  <a

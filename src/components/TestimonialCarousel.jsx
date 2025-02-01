@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 const TestimonialCarousel = () => {
   return (
-    <section className="py-16 mb-20 px-5 lg:px-20">
+    <section className="py-16 mb-20 px-5 lg:px-20"  data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-out">
       <div className="max-w-screen-xl mx-auto grid grid-cols-12 gap-8">
         {/* Texto */}
         <div className="col-span-12 lg:col-span-6 flex flex-col justify-center space-y-6 order-2 lg:order-1">
