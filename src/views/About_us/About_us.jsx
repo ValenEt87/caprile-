@@ -69,7 +69,7 @@ const About_us = () => {
           </div>
           
 
-          <div className='col-span-10 col-start-2 pt-20 lg:pt-24 text-center flex flex-col items-center justify-center'>
+          {/* <div className='col-span-10 col-start-2 pt-20 lg:pt-24 text-center flex flex-col items-center justify-center'>
           <svg
               id="Capa_1"
               data-name="Capa 1"
@@ -77,7 +77,7 @@ const About_us = () => {
               viewBox="0 0 975.35 119.75"
               className="w-24 mb-6"
               style={{
-                fill: "url(#gradient)", // Aplicar degradado
+                fill: "url(#gradient)", 
               }}
             >
               <defs>
@@ -90,8 +90,8 @@ const About_us = () => {
             </svg>
             <h2 className='text-3xl lg:text-4xl font-bold color-black-bmr'>Nuestro Staff</h2>
             <p className='text-lg'>Desde nuestros comienzos hasta nuestra actualidad creciendo en el Golf.</p>
-          </div>
-          <div className="col-span-12 lg:col-span-10 lg:col-start-2 flex flex-col md:flex-row justify-center gap-3 mb-5 items-center">
+          </div> */}
+          {/* <div className="col-span-12 lg:col-span-10 lg:col-start-2 flex flex-col md:flex-row justify-center gap-3 mb-5 items-center">
                 <div className="w-full max-w-sm rounded-lg dark:bg-gray-800 dark:border-gray-700">
                     <div className="flex flex-col items-center py-5">
                         <img className="w-24 h-24 mb-1 rounded-full shadow-lg" src="https://icons.veryicon.com/png/o/system/crm-android-app-icon/app-icon-person.png" alt=""/>
@@ -127,7 +127,7 @@ const About_us = () => {
                         <p className='px-5 text-center text-gray-900 dark:text-white font-medium'>Urbanizaciones y desarrollos inmobiliarios</p>
                     </div>
                 </div>
-              </div>
+              </div> */}
             {/* <div className='col-start-4 col-span-6 flex justify-center'>
               <a href='#' className="text-white bg-green-caprile py-3 px-6 lg:px-5 font-bold rounded-lg text-center transition duration-300 ease-in-out w-full" target='_blank'>
                   Contactar
