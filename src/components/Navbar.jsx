@@ -103,9 +103,9 @@ const Navbar = () => {
         data-aos-duration="800"
         data-aos-easing="ease-in-out"
       >
-        <div className="px-5 lg:px-8 flex flex-wrap items-center justify-between mx-auto py-3 lg:py-6">
+        <div className="px-5 lg:px-8 flex flex-wrap items-center justify-between mx-auto py-3 lg:py-5">
           <a href="/" className="flex items-center">
-            <img src="./logo.svg" alt="logo de Caprile Golf" className="max-w-32" />
+            <img src="./logo-caprile1.svg" alt="logo de Caprile Golf" className="max-w-40" />
           </a>
           <div className="flex space-x-2 md:space-x-0 rtl:space-x-reverse bg-white-caprile">
             <button
