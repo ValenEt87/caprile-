@@ -184,3 +184,10 @@ export const golfCourses = [
     ]
   }
 ];
+
+
+export const testimonialImages = [
+  "/imgs/gary-1.webp",
+  "/imgs/gary-2.webp",
+  "/imgs/gary-3.webp",
+];

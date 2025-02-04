@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import ImageCarousel from './ImageCarousel';
+import { testimonialImages } from '../constants';
 
 const TestimonialCarousel = () => {
   return (
@@ -32,12 +34,15 @@ const TestimonialCarousel = () => {
         </div>
 
         {/* Imagen */}
-        <div className="col-span-12 lg:col-span-6 flex justify-center order-1 lg:order-2">
+        {/* <div className="col-span-12 lg:col-span-6 flex justify-center order-1 lg:order-2">
           <img
             src="/imgs/gary-player.webp"
             alt="Gary Player Design"
             className="rounded-lg object-contain p-5"
           />
+        </div> */}
+        <div className="col-span-12 lg:col-span-6 flex justify-center order-1 lg:order-2">
+          <ImageCarousel images={testimonialImages} alt="Testimonial" />
         </div>
       </div>
       
