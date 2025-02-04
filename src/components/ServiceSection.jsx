@@ -74,7 +74,7 @@ const ServiceSection = () => {
   };
 
   return (
-    <section className="py-8 lg:pb-20 lg:pt-28 bg-fixed bg-center bg-no-repeat grid grid-cols-12 mx-5 md:px-5 lg:px-0 md:gap-5"  data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-out">
+    <section className="py-8 lg:pb-20 lg:pt-28 bg-fixed bg-center bg-no-repeat grid grid-cols-12 mx-5 md:px-5 lg:px-0"  data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-out">
       <div className="col-span-12 lg:col-span-5 lg:col-start-2 flex flex-col justify-center items-start order-2 lg:order-1">
         <h2 className="text-3xl lg:text-5xl font-medium mb-3">
            Un buen diseño integra el paisaje existente con la cancha a construir.
@@ -90,9 +90,9 @@ const ServiceSection = () => {
         </a>
       </div>
 
-      <div className="bg-fixed col-span-12 lg:col-span-6 lg:col-start-7 flex flex-col justify-center items-start order-1 lg:order-2order-1 lg:order-2 mb-3 lg:mb-0">
+      <div className="bg-fixed col-span-12 lg:col-span-5 lg:col-start-7 flex flex-col justify-center items-start order-1 lg:order-2order-1 lg:order-2 mb-3 lg:mb-0">
         <div className="accordion w-full flex flex-col items-center justify-center">
-          <div className="w-full lg:w-3/4">
+          <div className="w-full lg:w-5/6">
             {accordionData.map((accordion, index) => (
               <Accordion
                 key={index}

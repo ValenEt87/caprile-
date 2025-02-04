@@ -554,7 +554,7 @@ const Home = () => {
                         <div className="col-span-12 lg:col-start-7 lg:col-span-5 bg-white-bmr text-gray-900 rounded-xl shadow-lg p-6 lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-top-30 w-full">
                             <form className="space-y-4">
                                 <div>
-                                <label htmlFor="name" className="block text-sm font-semibold mb-1">
+                                <label htmlFor="name" className="block font-semibold mb-1">
                                     Nombre completo
                                 </label>
                                     <input
@@ -565,7 +565,7 @@ const Home = () => {
                                     />
                                 </div>
                                 <div>
-                                <label htmlFor="email" className="block text-sm font-semibold mb-1">
+                                <label htmlFor="email" className="block font-semibold mb-1">
                                     Email
                                 </label>
                                     <input
@@ -576,7 +576,7 @@ const Home = () => {
                                     />
                                 </div>
                                 <div>
-                                <label htmlFor="phone" className="block text-sm font-semibold mb-1">
+                                <label htmlFor="phone" className="block font-semibold mb-1">
                                     Teléfono
                                 </label>
                                     <input
@@ -587,7 +587,7 @@ const Home = () => {
                                     />
                                 </div>
                                 <div className='pb-0'>
-                                <label htmlFor="message" className="block text-sm font-semibold mb-1">
+                                <label htmlFor="message" className="block font-semibold mb-1">
                                     Mensaje
                                 </label>
                                     <textarea
