@@ -100,11 +100,11 @@ body{
   background-image: url('/imgs/ascochinga.jpg');
   background-size: cover;
 } */
-.bg-hero {
+/* .bg-hero {
   background-image: url('/imgs/ascochinga4.jpg');
   background-size: cover;
   background-position: center;
-  position: relative; /* Necesario para el pseudo-elemento */
+  position: relative; 
   z-index: 0;
   border-radius: 20px;
 }
@@ -121,7 +121,44 @@ body{
   z-index: -1;
   pointer-events: none;
   border-radius: 20px;
+} */
+
+@keyframes zoomInBackground {
+  0% {
+    background-size: 100%; /* Comienza en tamaño normal */
+  }
+  100% {
+    background-size: 105%; /* Hace zoom solo en la imagen */
+  }
 }
+
+.bg-hero {
+  background-image: url('/imgs/ascochinga4.jpg');
+  background-size: 100%; /* Tamaño inicial */
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 0;
+  border-radius: 20px;
+
+  /* Aplicamos la animación solo una vez */
+  animation: zoomInBackground 6s ease-in-out forwards;
+}
+
+.bg-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #113B21;
+  opacity: 0.6;
+  z-index: -1;
+  pointer-events: none;
+  border-radius: 20px;
+}
+
 
 .video-bg{
   background-image: url('/imgs/video-bg.jpg');
