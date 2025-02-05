@@ -11,10 +11,10 @@ import { NavLink } from 'react-router-dom';
 import ProjectsSection from './../../components/ProjectsSection.jsx'
 import ServiceSection from '../../components/ServiceSection.jsx'
 import ImageCarousel from '../../components/ImageCarousel.jsx'
-import { AboutUsImages } from '../../constants/index.js'
+import { AboutUsImages } from '../../constants/'
 import WhatsAppButton from '../../components/WhatsAppButton.jsx';
 import ContactForm from '../../components/ContactForm.jsx'
-
+console.log("🚀 AboutUsImages en Home:", AboutUsImages);
 const Home = () => {
     return (
         <>

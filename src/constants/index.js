@@ -185,15 +185,11 @@ export const golfCourses = [
   }
 ];
 
+const gary1 = "/imgs/gary-1.webp";
+const gary2 = "/imgs/gary-2.webp";
+const gary3 = "/imgs/gary-3.webp";
 
-export const testimonialImages = [
-  "/imgs/gary-1.webp",
-  "/imgs/gary-2.webp",
-  "/imgs/gary-3.webp",
-];
+export const testimonialImages = [gary1, gary2, gary3];
 
-export const AboutUsImages = [
-  "/imgs/gary-1.webp",
-  "/imgs/gary-2.webp",
-  "/imgs/gary-3.webp",
-];
+export const AboutUsImages = [gary1, gary2, gary3];
+

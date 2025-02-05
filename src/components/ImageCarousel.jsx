@@ -20,14 +20,15 @@ const ImageCarousel = ({ images, alt }) => {
   return (
     <div className="relative w-full max-w-md">
       {/* Contenedor con aspect ratio cuadrado */}
-      <div className="relative overflow-hidden rounded-lg aspect-square">
+      <div className="relative overflow-hidden rounded-lg w-96 h-96">
         {images.map((image, index) => (
           <div
-            key={index}
-            className={`absolute inset-0 transition-opacity duration-1000 ${
-              index === activeIndex ? "opacity-100" : "opacity-0"
-            }`}
-          >
+          key={index}
+          className={`absolute inset-0 transition-opacity duration-1000 ${
+            index === activeIndex ? "opacity-100 z-10" : "hidden"
+          }`}
+        >
+        
             <img
               src={image}
               alt={alt}
@@ -38,7 +39,7 @@ const ImageCarousel = ({ images, alt }) => {
       </div>
 
       {/* Indicadores de paginación achicados */}
-      <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-1">
+      <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-1 z-20">
         {images.map((_, idx) => (
           <span
             key={idx}
