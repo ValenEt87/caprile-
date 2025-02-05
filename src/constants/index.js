@@ -191,3 +191,9 @@ export const testimonialImages = [
   "/imgs/gary-2.webp",
   "/imgs/gary-3.webp",
 ];
+
+export const AboutUsImages = [
+  "/imgs/gary-1.webp",
+  "/imgs/gary-2.webp",
+  "/imgs/gary-3.webp",
+];
