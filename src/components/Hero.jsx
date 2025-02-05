@@ -108,6 +108,10 @@ import React from 'react'
           <div className="flex items-center md:gap-3">
             <a
               href="#contacto"
+              onClick={(e) => {
+                e.preventDefault(); // Evita el comportamiento predeterminado del enlace
+                document.getElementById("contacto")?.scrollIntoView({ behavior: "smooth" });
+              }}
               className="font-bold bg-green-950 transition duration-300 ease-in-out rounded-lg text-base py-3 px-6 lg:px-6 hover:bg-green-900"
             >
               Contactanos
