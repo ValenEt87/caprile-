@@ -102,8 +102,8 @@ import React from 'react'
           <h1 className="text-5xl lg:text-7xl font-medium">
             Golf Course Design & Construction
           </h1>
-          <p className="text-base font-normal lg:text-lg lg:pr-28">
-            Más de 50 años y tres generaciones construyendo y remodelando campos de golf.
+          <p className="text-base font-normal lg:text-lg lg:pr-18">
+            Más de 50 años y tres generaciones construyendo y remodelando campos de golf. Con base en Buenos Aires, hemos trabajado en toda la Argentina asi como en Brasil, Uruguay y Chile.
           </p>
           <div className="flex items-center md:gap-3">
             <a

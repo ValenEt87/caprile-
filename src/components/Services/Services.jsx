@@ -136,9 +136,9 @@ const Counter = ({ value, duration }) => {
   return (
     <span
       id={`counter-${value}`}
-      className="lg:text-7xl text-4xl font-bold color-blue-bmr number-animate"
+      className="lg:text-7xl text-5xl font-bold color-blue-bmr number-animate"
     >
-      +{value}
+      {value}
     </span>
   );
 };
