@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 const ImageCarousel = ({ images, alt }) => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -15,15 +15,15 @@ const ImageCarousel = ({ images, alt }) => {
     );
   };
 
-   return (
+  return (
     <div className="relative w-full">
       {/* Contenedor que usa aspect ratio para mantener proporciones */}
       <div className="relative overflow-hidden rounded-lg w-full aspect-[4/3]">
         {images.map((image, index) => (
           <div
             key={index}
-            className={`absolute inset-0 transition-opacity duration-1000 ${
-              index === activeIndex ? "opacity-100 z-10" : "hidden"
+            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+              index === activeIndex ? "opacity-100 z-10" : "opacity-0 z-0"
             }`}
           >
             <img
@@ -57,8 +57,9 @@ const ImageCarousel = ({ images, alt }) => {
         </div>
       </div>
 
-      {/* Indicadores de paginación achicados */}
-     {/*  <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-1 z-20">
+      {/* Indicadores de paginación (comentados, opcionales) */}
+      {/*
+      <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-1 z-20">
         {images.map((_, idx) => (
           <span
             key={idx}
@@ -68,7 +69,8 @@ const ImageCarousel = ({ images, alt }) => {
             }`}
           />
         ))}
-      </div> */}
+      </div>
+      */}
     </div>
   );
 };
