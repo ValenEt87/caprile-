@@ -138,7 +138,7 @@ const Counter = ({ value, duration }) => {
       id={`counter-${value}`}
       className="lg:text-7xl text-5xl font-bold color-blue-bmr number-animate"
     >
-      {value}
+      +{value}
     </span>
   );
 };
@@ -161,7 +161,7 @@ const Services = () => {
       value: 4,
       title: 'Países',
       description:
-        'Con base en Buenos Aires, hemos trabajado en toda la Argentina asi como en Brasil, Uruguay y Chile.',
+        'Con base en Buenos Aires, hemos desarrollado proyectos en toda la Argentina asi como en Brasil, Uruguay y Chile.',
     },
   ];
 

@@ -124,14 +124,14 @@ const Footer = () => {
             </div>
             {/* <hr className="my-6 border-neutral-600 sm:mx-auto dark:border-gray-700 lg:my-8 col-span-12" /> */}
             <div className="sm:flex sm:items-center sm:justify-between text-center col-span-12 mt-9">
-                <span className="text-sm text-gray-700 sm:text-center dark:text-gray-400 w-full">© 2025 <a href="#" className="hover:underline">Caprile Golf</a>. Todos los derechos reservados.
+                <span className="text-sm text-gray-700 sm:text-center dark:text-gray-400 w-full">© 2025 Caprile Golf | Todos los derechos reservados.
                 </span>
             </div>
         </div>
-        <div className="col-span-12 bg-green-950 py-1 text-white text-center text-sm flex justify-center items-center gap-2">
+        <div className="col-span-12 bg-green-950 py-2 text-white text-center text-sm flex justify-center items-center gap-2">
             <span>Hecho a través de</span>
             {/* <a href="#"><img src="/public/logo-alba.svg" alt="logo de Alba" className="w-4" /></a> */}
-            <a href="#"><img src="/public/rb_1605.svg" alt="logo de Alba" className="w-4" /></a>
+            <a href="https://www.instagram.com/valentin_et/"><img src="/public/rb_1605.svg" alt="logo de Alba" className="w-4" /></a>
         </div>
     </footer>
   )

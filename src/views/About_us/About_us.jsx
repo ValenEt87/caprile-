@@ -56,7 +56,7 @@ const About_us = () => {
           <div className='col-span-12 lg:col-start-7 lg:col-span-5' data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-out">
                 <h2 className='text-xl md:text-xl lg:text-3xl font-bold color-black-bmr lg:mb-3'>Conocé nuestra historia</h2>
                 <p className='lg:text-lg'>
-                  A fines de los años 60, los hermanos Diego y Alberto Caprile, hasta entonces productores agropecuarios y entusiastas jugadores, deciden diseñar y construir su primer campo de golf y urbanización en las proximidades de Buenos Aires. <br /> Luego del éxito de este desafío y acompañando el crecimiento de este deporte en nuestro país comienza a tomar forma nuestra empresa. A partir de entonces, fuimos sumando experiencia, incorporando personal especializado y equipos de construcción.
+                  A fines de los años 60, los hermanos Diego y Alberto Caprile, hasta entonces productores agropecuarios y entusiastas jugadores, deciden <b>diseñar y construir su primer campo de golf y urbanización</b> en las proximidades de Buenos Aires. <br /> Luego del éxito de este desafío y acompañando el crecimiento de este deporte en nuestro país comienza a tomar forma nuestra empresa. A partir de entonces, fuimos <b>sumando experiencia, incorporando personal especializado y equipos de construcción.</b>
                 </p>
           </div>
           <div className='col-span-12 lg:col-start-2 lg:col-span-5' data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-out">
@@ -75,7 +75,7 @@ const About_us = () => {
             </div>
           </div>
           
-
+          {/*   
           <div className='col-span-10 col-start-2 pt-20 lg:pt-24 text-center flex flex-col items-center justify-center'>
           <svg
               id="Capa_1"
@@ -98,7 +98,7 @@ const About_us = () => {
             <h2 className='text-3xl lg:text-4xl font-bold color-black-bmr'>Nuestro Staff</h2>
             <p className='text-lg'>Desde nuestros comienzos hasta nuestra actualidad creciendo en el Golf.</p>
           </div>
-          {/* <div className="col-span-12 lg:col-span-10 lg:col-start-2 flex flex-col md:flex-row justify-center gap-3 mb-5 items-center">
+           <div className="col-span-12 lg:col-span-10 lg:col-start-2 flex flex-col md:flex-row justify-center gap-3 mb-5 items-center">
                 <div className="w-full max-w-sm rounded-lg dark:bg-gray-800 dark:border-gray-700">
                     <div className="flex flex-col items-center py-5">
                         <img className="w-24 h-24 mb-1 rounded-full shadow-lg" src="https://icons.veryicon.com/png/o/system/crm-android-app-icon/app-icon-person.png" alt=""/>
