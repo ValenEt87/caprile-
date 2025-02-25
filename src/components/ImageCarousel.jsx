@@ -8,27 +8,17 @@ const ImageCarousel = ({ images, alt }) => {
     setActiveIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
 
-  // Avanza automáticamente cada 3 segundos
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      nextSlide();
-    }, 5000);
-
-    return () => clearInterval(intervalId);
-  }, [images]);
-
   return (
-    <div className="relative w-full max-w-md">
-      {/* Contenedor con aspect ratio cuadrado */}
-      <div className="relative overflow-hidden rounded-lg w-96 h-96">
+    <div className="relative w-full">
+      {/* Contenedor que usa aspect ratio para mantener proporciones */}
+      <div className="relative overflow-hidden rounded-lg w-full aspect-[16/9]">
         {images.map((image, index) => (
           <div
-          key={index}
-          className={`absolute inset-0 transition-opacity duration-1000 ${
-            index === activeIndex ? "opacity-100 z-10" : "hidden"
-          }`}
-        >
-        
+            key={index}
+            className={`absolute inset-0 transition-opacity duration-1000 ${
+              index === activeIndex ? "opacity-100 z-10" : "hidden"
+            }`}
+          >
             <img
               src={image}
               alt={alt}
