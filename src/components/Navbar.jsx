@@ -135,41 +135,42 @@ const Navbar = () => {
             id="navbar-sticky"
           >
             <ul className="flex flex-col justify-between p-10 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 gap-5">
-              <li className="">
-                <a
-                  href="/"
-                  activeClassName="text-green-800"
-                  className={`py-2 px-3 font-semibold nav-link rounded md:p-0 md:dark:text-blue-500 ${
-                    location.pathname === '/' ? 'text-green-600' : 'text-gray-500'
-                  }`}
-                >
-                  Home
-                </a>
-              </li>
-              <li className="">
-                <a
-                  href="/proyectos"
-                  activeClassName="text-green-800"
-                  className={`py-2 px-3 font-semibold nav-link rounded md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 ${
-                    location.pathname === '/proyectos' ? 'text-green-800' : 'text-gray-500'
-                  }`}
-                >
-                  Proyectos
-                </a>
-              </li>
-              <li className="">
-                <a
-                  href="/sobre-nosotros"
-                  activeClassName="text-green-800"
-                  className={`py-2 px-3 font-semibold nav-link rounded md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 ${
-                    location.pathname === '/sobre-nosotros'
-                      ? 'text-green-800'
-                      : 'text-gray-500'
-                  }`}
-                >
-                  Nosotros
-                </a>
-              </li>
+            <li className="">
+              <a
+                href="/"
+                activeClassName="text-green-800"
+                className={`relative py-2 px-3 font-semibold nav-link rounded md:p-0 md:dark:text-blue-500 group ${
+                  location.pathname === '/' ? 'text-green-600' : 'text-gray-500'
+                }`}
+              >
+                Home
+                <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-green-700 transition-all duration-300 ease-in-out group-hover:w-full"></span>
+              </a>
+            </li>
+            <li className="">
+              <a
+                href="/proyectos"
+                activeClassName="text-green-800"
+                className={`relative py-2 px-3 font-semibold nav-link rounded md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 group ${
+                  location.pathname === '/proyectos' ? 'text-green-800' : 'text-gray-500'
+                }`}
+              >
+                Proyectos
+                <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-green-700 transition-all duration-300 ease-in-out group-hover:w-full"></span>
+              </a>
+            </li>
+            <li className="">
+              <a
+                href="/sobre-nosotros"
+                activeClassName="text-green-800"
+                className={`relative py-2 px-3 font-semibold nav-link rounded md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 group ${
+                  location.pathname === '/sobre-nosotros' ? 'text-green-800' : 'text-gray-500'
+                }`}
+              >
+                Nosotros
+                <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-green-700 transition-all duration-300 ease-in-out group-hover:w-full"></span>
+              </a>
+            </li>
               <li className="">
                 {/* <a
                   href="#contacto"

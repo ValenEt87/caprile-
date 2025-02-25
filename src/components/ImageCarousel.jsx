@@ -18,7 +18,7 @@ const ImageCarousel = ({ images, alt }) => {
    return (
     <div className="relative w-full">
       {/* Contenedor que usa aspect ratio para mantener proporciones */}
-      <div className="relative overflow-hidden rounded-lg w-full aspect-[16/9]">
+      <div className="relative overflow-hidden rounded-lg w-full aspect-[4/3]">
         {images.map((image, index) => (
           <div
             key={index}
