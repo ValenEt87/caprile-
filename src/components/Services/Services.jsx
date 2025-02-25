@@ -170,7 +170,6 @@ const Services = () => {
   return (
     <section className="grid grid-cols-12 mx-5 py-20 lg:py-24 gap-5">
       <h2 className="sr-only">Nuestros valores</h2>
-
       <div
         className="col-span-12 lg:col-start-2 lg:col-span-10 grid grid-cols-12 lg:grid-cols-9 gap-5 lg:gap-6 text-center"
         data-aos="fade-up"
@@ -187,7 +186,7 @@ const Services = () => {
             <div className="w-28 flex justify-center items-center">
               <Counter value={service.value} duration={duration} />
             </div>
-            <h3 className="lg:text-2xl text-lg font-bold color-blue-bmr mb-3 text-animate">
+            <h3 className="lg:text-2xl text-lg font-bold color-blue-bmr mb-1 lg:mb-3 text-animate">
               {service.title}
             </h3>
             <p className="text-gray-500 text-animate">{service.description}</p>

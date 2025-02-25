@@ -82,7 +82,7 @@ const Footer = () => {
                         </li>
                     </ul>
                 </div>
-                <div className="flex flex-col text-center md:text-start mt-3 md:mt-0">
+                <div className="flex flex-col md:text-center md:text-start mt-3 md:mt-0">
                     <span className="font-bold color-blue-bmr">Contactanos</span>
                     <ul className="text-slate-300 font-medium mt-3">
                         <li className="mb-4">
