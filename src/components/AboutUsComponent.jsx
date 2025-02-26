@@ -9,7 +9,7 @@ const AboutUsComponent = () => {
   
         {/* Contenedor del carrusel */}
         <div
-          className="col-span-12 lg:col-span-5 lg:col-start-2 flex justify-center lg:ps-4"
+          className="col-span-12 lg:col-span-5 lg:col-start-2 flex justify-center lg:ps-4 mb-3 lg:mb-0"
           data-aos="fade-up"
           data-aos-duration="500"
           data-aos-easing="ease-in-out"

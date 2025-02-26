@@ -80,11 +80,10 @@ const ContactForm = () => {
   };
 
   return (
-    <section id='contacto' className="bg-green-950 text-white lg:relative lg:h-[650px] bg-services bg-fixed mx-5 lg:mx-8 rounded-2xl py-2 mb-10 lg:py-20">
-      <div className="grid grid-cols-12 gap-4 px-5 py-6 lg:py-0 items-center h-full lg:relative">
-          
+    <section id='contacto' className="bg-green-950 text-white lg:relative lg:h-[650px] bg-services bg-fixed mx-5 lg:mx-8 rounded-2xl lg:py-2 mb-10 lg:py-20">
+      <div className="grid grid-cols-12 gap-4 lg:px-0 px-5 py-6 lg:py-0 items-center h-full lg:relative">
           <div className="col-span-12 col lg:col-start-2 lg:col-span-4 text-center text-start">
-              <h2 className="text-3xl lg:text-5xl font-medium mb-2">Completá el formulario</h2>
+              <h2 className="text-3xl lg:text-5xl font-medium mb-2">Contactanos para recibir más información</h2>
               <p className="lg:text-lg mb-4">
                   Escribinos y nos pondremos en contacto,
                   o visitá nuestras redes sociales.

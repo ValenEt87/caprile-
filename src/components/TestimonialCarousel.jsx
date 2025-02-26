@@ -25,7 +25,7 @@ const TestimonialCarousel = () => {
       </div>
 
       {/* Contenedor del carrusel */}
-      <div className="col-span-12 lg:col-span-5 lg:col-start-7 flex justify-center lg:pe-4 order-1 lg:order-2">
+      <div className="col-span-12 lg:col-span-5 lg:col-start-7 flex justify-center lg:pe-4 order-1 lg:order-2 mb-3 lg:mb-0">
         <ImageCarousel images={testimonialImages} alt="Testimonial" />
       </div>
     </section>
