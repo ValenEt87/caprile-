@@ -20,11 +20,11 @@ const ProjectsWithoutImagesList = ({ selectedCategory }) => {
     : projectsWithoutImages;
 
   return (
-    <section className="mx-5 grid grid-cols-12 my-8">
+    <section className="mx-5 grid grid-cols-12 mt-8">
       <div className="col-span-12">
-        <h2 className="text-2xl font-bold mb-4">Otros proyectos:</h2>
+        <h2 className="text-2xl font-bold mb-3">Otros proyectos:</h2>
         {filteredCategories.map((categoryObj, idx) => (
-          <div key={idx} className="mb-6">
+          <div key={idx}>
             <ul className="list-disc pl-5">
               {categoryObj.courses.map((course, i) => (
                 <li key={i} className="text-lg">

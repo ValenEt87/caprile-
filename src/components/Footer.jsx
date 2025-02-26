@@ -7,8 +7,8 @@ const Footer = () => {
     <footer className="dark:bg-gray-900 pt-10 lg:pt-16 border-t border-[rgb(206,201,193)]">
         <div className="2xl:mx-auto w-full pb-10 grid grid-cols-12 md:gap-5 gap-2 lg:mx-5 justify-items-center">
             <div className="mb-6 md:mb-0 col-span-12 lg:col-span-4 md:col-start-2 md:col-span-10">
-                <a href="#" className="flex items-center mb-6">
-                    <img src="./logo.svg" alt="logo de Caprile Golf" className="max-w-48" />
+                <a href="#" className="flex items-center mb-6"> 
+                    <img src="./logo-caprile1.svg" alt="logo de Caprile Golf" className="max-w-48" />
                 </a>
                 {/* <div className="mb-4">
                     <span>
