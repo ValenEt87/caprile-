@@ -131,7 +131,7 @@ const Footer = () => {
         <div className="col-span-12 bg-green-950 py-2 text-white text-center text-sm flex justify-center items-center gap-2">
             <span>Hecho a través de</span>
             {/* <a href="#"><img src="/public/logo-alba.svg" alt="logo de Alba" className="w-4" /></a> */}
-            <a href="https://www.instagram.com/valentin_et/"><img src="/public/rb_1605.svg" alt="logo de Alba" className="w-4" /></a>
+            <a href="https://www.instagram.com/valentin_et/"><img src="./logo-alba.svg" alt="logo de Alba" className="w-4" /></a>
         </div>
     </footer>
   )
