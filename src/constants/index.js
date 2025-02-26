@@ -289,13 +289,14 @@ export const projectsWithoutImages = [
 
 
 export const testimonialImages = [
-  "/imgs/gary-1.webp",
-  "/imgs/gary-2.webp",
-  "/imgs/gary-3.webp",
+  "/imgs/gary3.webp",
+  "/imgs/gary.webp",
+  "/imgs/gary2.webp",
 ];
 
 export const AboutUsImages = [
-  "/imgs/Nosotros/3generaciones.webp",
   "/imgs/Nosotros/historia6.webp",
- /*  "/imgs/Nosotros/gary-3.webp", */
+  "/imgs/Nosotros/3generaciones.webp",
+  "/imgs/Nosotros/Marcos Capdepont, Ken Dye y Tolo Caprile en Martindale.webp",
+  "/imgs/Nosotros/Pablo Caprile en La Rioja.webp",
 ];
