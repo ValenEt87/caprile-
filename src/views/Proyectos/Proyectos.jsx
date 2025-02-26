@@ -79,6 +79,7 @@ import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Navbar from "./../../components/Navbar.jsx";
 import ProjectsSection from "./../../components/ProjectsSection.jsx";
+import ProjectsWithoutImagesList from "./../../components/ProjectsWithoutImagesList.jsx";
 import ContactForm from "./../../components/ContactForm.jsx";
 import Footer from "./../../components/Footer.jsx";
 import { golfCourses } from "../../constants";
@@ -356,7 +357,7 @@ const Proyectos = () => {
   const [currentImages, setCurrentImages] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [currentTitle, setCurrentTitle] = useState("");
-
+  const [projectsByCategory, setProjectsByCategory] = useState({});
 
   useEffect(() => {
     const normalizedCategory = selectedCategory
@@ -383,6 +384,18 @@ const Proyectos = () => {
       }
     }, [selectedCategory]);
     
+    useEffect(() => {
+      const loadProjects = () => {
+        const limitedProjects = {};
+        golfCourses.forEach((categoryObj) => {
+          // Puedes limitar la cantidad de proyectos por categoría si lo requieres
+          limitedProjects[categoryObj.category] = categoryObj.courses.slice(0, 3);
+        });
+        setProjectsByCategory(limitedProjects);
+      };
+      loadProjects();
+    }, []);
+
   const openLightbox = (images, title, index = 0) => {
     setCurrentImages(images);
     setCurrentIndex(index);
@@ -449,7 +462,7 @@ const Proyectos = () => {
           </div>
         )}
 
-        <Category projects={projects} onCardClick={openLightbox} />
+        <Category projects={projects} onCardClick={openLightbox} selectedCategory={selectedCategory} />
       </section>
       {lightboxOpen && (
         <Lightbox
@@ -467,7 +480,7 @@ const Proyectos = () => {
   );
 };
 
-const Category = ({ projects, onCardClick }) => {
+const Category = ({ projects, onCardClick, selectedCategory }) => {
   return (
     <div className="mb-5 col-span-10 col-start-2">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -481,10 +494,12 @@ const Category = ({ projects, onCardClick }) => {
           />
         ))}
       </div>
+      <div className="col-span-12">
+        <ProjectsWithoutImagesList selectedCategory={selectedCategory} />
+      </div>
     </div>
   );
 };
-
 const ProjectCard = ({ title, coverImage, images, onClick }) => {
   return (
     <div
