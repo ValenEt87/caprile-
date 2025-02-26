@@ -18,7 +18,11 @@ const Home = () => {
             <Navbar />
             <Hero />
             <Services />
-            <div className="grid grid-cols-12">
+            <div className="grid grid-cols-12" 
+             data-aos="fade-up"
+             data-aos-duration="700"
+             data-aos-easing="ease-in-out"
+             >
                 <div className="col-span-12 flex justify-center">
                 <svg
                     id="Capa_1"
