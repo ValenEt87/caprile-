@@ -1,28 +1,5 @@
 import React from 'react'
-/* const Hero = () => {
-  return (
-    <div>
-        <section className="bg-center bg-no-repeat bg-hero h-dvh flex flex-col justify-center">
-            <div className="px-4 lg:px-20 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
-                <h1 className="mb-4 text-4xl font-medium text-white md:text-5xl lg:text-6xl">Golf Course Design & Construction</h1>
-                <p className="mb-8 text-lg font-normal text-gray-100 lg:text-xl sm:px-16 lg:px-40">Mas de 50 años y tres generaciones construyendo y remodelando campos de golf.</p>
-                <div className="flex flex-col space-y-4 sm:flex-row items-center justify-center sm:space-y-0" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-out">
-                    <a href='#contacto' className="color-blue-bmr font-bold bg-yellow-bmr transition duration-300 ease-in-out focus:ring-2 focus:outline-none focus:ring-white dark:focus:ring-yellow-800 rounded-md text-base py-3 px-6 lg:px-5 text-center me-2 w-fit">
-                        Contactanos
-                    </a>
-                    <a href='#proyectos' className="text-white font-bold transition duration-300 ease-in-out focus:ring-2 focus:outline-none focus:ring-white dark:focus:ring-yellow-800 rounded-md text-base py-3 px-6 lg:px-5 text-center me-2 mb-2 w-fit flex items-center gap-2">
-                        Ver proyectos
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </section>
-    </div>
-  )
-} */
-  import { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
   const Hero = () => {
     const slides = [
       {
@@ -47,62 +24,15 @@ import React from 'react'
       return () => clearInterval(interval);
     }, [slides.length]);
   
-    /* return (
-      <div className="relative">
-        <section
-          className="bg-center bg-no-repeat bg-hero bg-fixed h-dvh flex flex-col justify-center transition-all duration-1000"
-          style={{
-            backgroundImage: `url(${slides[currentSlide].image})`,
-          }}
-        >
-          <div className="px-4 lg:px-20 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
-            <h1 className="mb-3 text-4xl font-medium text-white md:text-5xl lg:text-6xl">
-              {slides[currentSlide].title}
-            </h1>
-            <p className="mb-8 text-lg font-normal text-gray-100 lg:text-xl sm:px-16 lg:px-40">
-              Más de 50 años y tres generaciones construyendo y remodelando campos de golf.
-            </p>
-            <div className='flex justify-center items-center gap-1'>
-              <a
-                href="#contacto"
-                className="color-blue-bmr font-bold bg-yellow-bmr transition duration-300 ease-in-out focus:ring-1 focus:outline-none focus:ring-white dark:focus:ring-yellow-800 rounded-md text-base py-3 px-6 lg:px-8 text-center w-fit"
-              >
-                Contactanos
-              </a>
-              <a
-                href="#proyectos"
-                className="text-white font-bold bg-transparent transition duration-300 ease-in-out focus:ring-1 focus:outline-none focus:ring-white dark:focus:ring-yellow-800 rounded-md text-base py-3 px-6 text-center w-fit flex items-center gap-2"
-              >
-                Ver proyectos
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2">
-            <div className="animate-bounce">
-              <img src='/public/scroll-icon2.svg'
-                alt="Scroll down"
-                className="w-10 h-10">
-              </img>
-            </div>
-          </div>
-        </section>
-      </div>
-    );
-  }; */
-
-
   return (
     <div className=" text-white">
       <section className="grid grid-cols-12 mt-16 lg:mt-20 mx-5 lg:mx-8 items-center h-[670px] lg:h-[720px] bg-hero bg-fixed">
         {/* Título Fijo Izquierdo */}
-        <div className="col-span-10 col-start-2 lg:col-start-2 md:col-span-5 space-y-6" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-out">
-          <h1 className="text-5xl lg:text-7xl font-medium">
+        <div className="col-span-10 col-start-2 lg:col-start-2 md:col-span-5" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-out">
+          <h1 className="text-5xl lg:text-7xl font-medium mb-3">
             Golf Course Design & Construction
           </h1>
-          <p className="text-base font-normal lg:text-lg lg:pr-18">
+          <p className="text-base font-normal lg:text-lg lg:pr-18 mb-6">
             Más de 50 años y tres generaciones construyendo y remodelando campos de golf. Con base en Buenos Aires, hemos trabajado en toda la Argentina asi como en Brasil, Uruguay y Chile.
           </p>
           <div className="flex items-center md:gap-3">

@@ -123,27 +123,38 @@ body{
   border-radius: 20px;
 } */
 
-@keyframes zoomInBackground {
-  0% {
-    background-size: 100%; /* Comienza en tamaño normal */
-  }
-  100% {
-    background-size: 108%; /* Hace zoom solo en la imagen */
-  }
-}
-
 .bg-hero {
   background-image: url('/imgs/ascochinga4.jpg');
-  background-size: 100%; /* Tamaño inicial */
+  /* En desktop usamos la animación con tamaño numérico */
+  background-size: 100% auto;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
   z-index: 0;
   border-radius: 20px;
-
-  /* Aplicamos la animación solo una vez */
   animation: zoomInBackground 6s ease-in-out forwards;
+  min-height: 400px; /* Aseguramos una altura mínima */
 }
+
+@media (max-width: 640px) {
+  .bg-hero {
+    /* En mobile, usamos cover para asegurarnos de que la imagen cubre el contenedor */
+    background-size: cover;
+    /* Opcional: desactivar la animación si causa problemas */
+    animation: none;
+    min-height: 300px; /* Ajusta según lo necesites */
+  }
+}
+
+@keyframes zoomInBackground {
+  0% {
+    background-size: 100% auto;
+  }
+  100% {
+    background-size: 108% auto;
+  }
+}
+
 
 .bg-hero::before {
   content: '';
