@@ -120,10 +120,10 @@ const ContactForm = () => {
           </div>
 
           {/* Formulario */}
-          <div className="col-span-12 lg:col-start-7 lg:col-span-5 bg-white-bmr text-gray-900 rounded-xl shadow-lg p-6 lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-top-30 w-full">
+          <div className="col-span-12 lg:col-start-7 lg:col-span-5 bg-white-bmr text-gray-900 rounded-xl shadow-lg p-5 lg:p-6 lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-top-30 w-full">
               <form className="space-y-4">
                   <div>
-                  <label htmlFor="name" className="block text-sm font-semibold mb-1">
+                  <label htmlFor="name" className="block font-semibold mb-1">
                       Nombre completo
                   </label>
                       <input

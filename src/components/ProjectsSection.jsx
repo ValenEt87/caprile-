@@ -103,7 +103,7 @@ const ProjectsSection = () => {
               {projectsByCategory[category].map((project, index) => (
                 <div
                   key={index}
-                  className="bg-cover bg-center h-32 lg:h-48 rounded-lg overflow-hidden relative cursor-pointer"
+                  className="bg-cover bg-center h-40 lg:h-48 rounded-lg overflow-hidden relative cursor-pointer"
                   style={{ backgroundImage: `url(${project.images[0].src})` }}
                   onClick={() => openLightbox(project.images, 0, project.title)} // Pasar el título
                 >

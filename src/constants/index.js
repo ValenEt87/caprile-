@@ -195,7 +195,7 @@ export const golfCourses = [
         ]
       },
       {
-        title: "El Nacional Golf Club (Gral Rodríguez, Bs As)",
+        title: "El Nacional Golf (Gral Rodríguez, Bs As)",
         coverImage: img11,
         images: [
           { src: img11, alt: "Campo principal de El Nacional Golf Club" },

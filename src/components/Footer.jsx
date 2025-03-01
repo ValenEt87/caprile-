@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="dark:bg-gray-900 pt-10 lg:pt-16 border-t border-[rgb(206,201,193)]">
         <div className="2xl:mx-auto w-full grid grid-cols-12 md:gap-5 gap-2 lg:mx-5 ">
             <div className="mb-6 md:mb-0 col-span-10 col-start-2 lg:col-span-4 lg:col-start-2 md:col-start-2 md:col-span-10">
-                <a href="#" className="flex items-center mb-6"> 
+                <a href="#" className="flex items-center mb-3 lg:mb-6"> 
                     <img src="./logo-caprile1.svg" alt="logo de Caprile Golf" className="max-w-48" />
                 </a>
             </div>
@@ -81,14 +81,14 @@ const Footer = () => {
                     </ul>
                 </div>
             </div>
-            <div className="sm:flex sm:items-center sm:justify-between text-center col-span-12 py-3">
+            <div className="sm:flex sm:items-center sm:justify-between text-center col-span-12 py-4">
                 <span className="text-sm text-gray-700 sm:text-center dark:text-gray-400 w-full">© 2025 Caprile Golf
                 </span>
             </div>
         </div>
-        <div className="col-span-12 bg-green-950 py-3 text-white text-center text-sm flex justify-center items-center gap-2">
+        <div className="col-span-12 bg-green-950 py-4 text-white text-center text-sm flex justify-center items-center gap-2">
             <span>Hecho a través de</span>
-            <a href="https://www.instagram.com/valentin_et/"><img src="./logo-alba.svg" alt="logo de Alba" className="w-4" /></a>
+            <a href="https://www.instagram.com/valentin_et/" target="_blanck"><img src="./logo-alba.svg" alt="logo de Alba" className="w-4" /></a>
         </div>
     </footer>
   )
