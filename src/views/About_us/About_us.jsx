@@ -43,13 +43,13 @@ const About_us = () => {
           <div className='col-span-12 lg:col-span-5 lg:col-start-2 mb-6 lg:mb-12'>
             <ImageCarousel images={historiacalImages} alt="Imagenes de la historia de Caprile Golf" />
           </div>
-          <div className='col-span-12 lg:col-start-7 lg:col-span-5' data-aos="fade-up" data-aos-duration="300" data-aos-easing="ease-in-out">
+          <div className='col-span-12 lg:col-start-7 lg:col-span-5' data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-out">
                 <h2 className='text-2xl  lg:text-3xl font-bold color-black-bmr mb-1 lg:mb-3'>Conocé nuestra historia</h2>
                 <p className='lg:text-lg'>
                   A fines de los años 60, los hermanos Diego y Alberto Caprile, hasta entonces productores agropecuarios y entusiastas jugadores, deciden <b>diseñar y construir su primer campo de golf y urbanización</b> en las proximidades de Buenos Aires. <br /> Luego del éxito de este desafío y acompañando el crecimiento de este deporte en nuestro país comienza a tomar forma nuestra empresa. A partir de entonces, fuimos <b>sumando experiencia, incorporando personal especializado y equipos de construcción.</b>
                 </p>
           </div>
-          <div className='col-span-12 lg:col-start-2 lg:col-span-5' data-aos="fade-up" data-aos-duration="300" data-aos-easing="ease-in-out">
+          <div className='col-span-12 lg:col-start-2 lg:col-span-5' data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-out">
                 <h2 className='text-2xl  lg:text-3xl font-bold mb-1 lg:mb-3'>Y nuestra actualidad</h2>
                 <p className='lg:text-lg'>
                   Hoy, a más de 50 años de aquellos comienzos, nuestra empresa se encuentra entre las <b>más reconocidas del país</b> y hemos trabajado en numerosas canchas de Argentina, Chile, Uruguay y Brasil. Muchos de estos proyectos fueron con diseño propio y otros en colaboración o en la ejecución de proyectos de otros diseñadores como <b>Ken Dye, Bob Cupp, Gary Player Design y American Golf Design</b>, entre otros.
