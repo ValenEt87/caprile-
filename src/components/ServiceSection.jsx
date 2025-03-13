@@ -84,6 +84,10 @@ const ServiceSection = () => {
         </p>
         <a
           href="#contacto"
+          onClick={(e) => {
+            e.preventDefault(); // Evita el comportamiento predeterminado del enlace
+            document.getElementById("contacto")?.scrollIntoView({ behavior: "smooth" });
+          }}
           className="bg-green-950 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-900 transition duration-500 flex items-center gap-2"
         >
           Quiero saber más
