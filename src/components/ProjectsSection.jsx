@@ -157,7 +157,11 @@ const Lightbox = ({ images, currentIndex, onClose, onNext, onPrevious, title }) 
             <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
           </svg>
         </button>
-        <img src={images[currentIndex].src} alt="Imagen" className="max-h-screen max-w-screen-lg rounded-lg" />
+        <img
+            src={images[currentIndex].src}
+            alt={images[currentIndex].alt}
+            className="max-w-screen-lg max-h-[70vh] md:max-h-[80vh] lg:max-h-[80vh] rounded-lg"
+          />
         <button
           onClick={onNext}
           className="absolute right-3 text-white text-3xl px-4 py-4 bg-white bg-opacity-20 hover:bg-opacity-30 rounded-full"

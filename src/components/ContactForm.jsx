@@ -50,7 +50,7 @@ const ContactForm = () => {
   return (
     <section
       id="contacto"
-      className="bg-green-950 text-white lg:relative lg:h-[650px] bg-services bg-fixed mx-5 lg:mx-8 rounded-2xl lg:py-2 mb-10 lg:py-20"
+      className="bg-green-950 text-white lg:relative lg:h-[700px] bg-services bg-fixed mx-5 lg:mx-8 rounded-2xl lg:py-2 mb-10 lg:py-20"
     >
       <div className="grid grid-cols-12 gap-4 lg:px-0 px-5 py-6 lg:py-0 items-center h-full lg:relative">
         <div className="col-span-12 lg:col-start-2 lg:col-span-4 text-center text-start">
@@ -68,7 +68,7 @@ const ContactForm = () => {
 
         {/* Formulario */}
         <div className="col-span-12 lg:col-start-7 lg:col-span-5 bg-white-bmr text-gray-900 rounded-xl shadow-lg p-5 lg:p-6 lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-top-30 w-full">
-          <form onSubmit={onSubmit} className="space-y-4">
+          <form onSubmit={onSubmit} className="space-y-4 mt-4">
             <div>
             <input type="hidden" name="from_name" value="" />
               <label htmlFor="nombre" className="block font-semibold mb-1">

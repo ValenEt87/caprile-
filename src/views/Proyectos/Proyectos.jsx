@@ -212,10 +212,10 @@ const Lightbox = ({ images, currentIndex, onClose, onNext, onPrevious, title }) 
           </svg>
         </button>
         <img
-          src={images[currentIndex].src}
-          alt={images[currentIndex].alt}
-          className="max-w-screen-lg max-h-screen-lg rounded-lg"
-        />
+            src={images[currentIndex].src}
+            alt={images[currentIndex].alt}
+            className="max-w-screen-lg max-h-[70vh] md:max-h-[80vh] lg:max-h-[80vh] rounded-lg"
+          />
         <button
           onClick={onNext}
           className="absolute right-3 text-white text-3xl px-4 py-4 bg-white bg-opacity-20 hover:bg-opacity-30 rounded-full"
