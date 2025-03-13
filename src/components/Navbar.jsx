@@ -121,7 +121,7 @@ const Navbar = () => {
                     e.preventDefault(); // Evita el comportamiento predeterminado del enlace
                     document.getElementById("contacto")?.scrollIntoView({ behavior: "smooth" });
                   }}
-                  className={`py-2 px-3 lg:p-3 font-semibold nav-link bg-green-950 text-white rounded-lg md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:bg-green-900 dark:border-gray-700 ${
+                  className={`py-2 px-3 lg:p-3 font-semibold nav-link bg-green-950 text-white rounded-lg md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:bg-green-900 dark:border-gray-700 ${
                     location.pathname === '/sobre-nosotros' ? 'text-green-800' : 'text-gray-500'
                   }`}
                 >

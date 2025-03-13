@@ -28,7 +28,7 @@ import { useState, useEffect } from "react";
     <div className=" text-white">
       <section className="grid grid-cols-12 mt-16 lg:mt-20 mx-5 lg:mx-8 items-center h-[670px] lg:h-[720px] bg-hero bg-fixed">
         {/* Título Fijo Izquierdo */}
-        <div className="col-span-10 col-start-2 lg:col-start-2 md:col-span-5" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-out">
+        <div className="col-span-10 col-start-2 lg:col-start-2 md:col-start-2 md:col-span-5" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-out">
           <h1 className="text-5xl lg:text-7xl font-medium mb-3">
             Golf Course Design & Construction
           </h1>
