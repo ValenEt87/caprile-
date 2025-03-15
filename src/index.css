@@ -143,6 +143,7 @@ body{
     /* Opcional: desactivar la animación si causa problemas */
     animation: none;
     min-height: 300px; /* Ajusta según lo necesites */
+    background-attachment: scroll;
   }
 }
 
