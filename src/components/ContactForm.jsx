@@ -55,10 +55,10 @@ const ContactForm = () => {
       <div className="grid grid-cols-12 gap-4 lg:px-0 px-5 py-6 lg:py-0 items-center h-full lg:relative">
         <div className="col-span-12 lg:col-start-2 lg:col-span-4 text-center text-start">
           <h2 className="text-3xl lg:text-5xl font-medium mb-2">
-            Contáctanos para recibir más información
+            Ponete en contacto para recibir más información
           </h2>
           <p className="lg:text-lg mb-4">
-            Escríbenos y nos pondremos en contacto, o visitá nuestras redes sociales.
+            Escribinos y nos pondremos en contacto, o visitá nuestras redes sociales.
           </p>
           {/* Redes sociales */}
           <div className="flex justify-center lg:justify-start space-x-2 sr-only lg:not-sr-only">
@@ -116,7 +116,6 @@ const ContactForm = () => {
                 id="mensaje"
                 name="mensaje"
                 rows="4"
-                required
                 className="w-full border border-gray-300 bg-white-bmr rounded-lg transition duration-300 px-4 py-2 text-sm"
                 placeholder="Ej: Hola, me gustaría recibir más información..."
               ></textarea>

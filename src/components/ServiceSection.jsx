@@ -76,11 +76,11 @@ const ServiceSection = () => {
   return (
     <section className="py-8 lg:pb-20 lg:pt-20 bg-fixed bg-center bg-no-repeat grid grid-cols-12 mx-5 md:px-5 lg:px-0"  data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-out">
       <div className="col-span-12 lg:col-span-5 lg:col-start-2 flex flex-col justify-center items-start order-2 lg:order-1">
-        <h2 className="text-3xl lg:text-5xl font-medium mb-3">
+        <h2 className="text-3xl lg:text-5xl font-medium mb-3 lg:pe-20">
            Un buen diseño integra el paisaje existente con la cancha a construir.
         </h2>
         <p className="lg:text-lg mb-8 text-green-950">
-        Nuestra experiencia puede ayudarlo a optimizar sus costos y obtener los mejores resultados. Contamos con un personal altamente capacitado, junto con proyectistas, ingenieros y directores de obra.
+        Abarcamos la construccion integral de una cancha desde su planificacion inicial hasta su puesta en funcionamiento. Intervenimos en canchas en juego para mejorar aspectos como el drenaje, riego, reconstruccion de greens, nuevos bunkers y tees.
         </p>
         <a
           href="#contacto"

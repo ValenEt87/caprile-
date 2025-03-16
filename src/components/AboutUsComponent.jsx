@@ -32,7 +32,7 @@ const AboutUsComponent = () => {
           <p className="lg:text-lg">
             Muchos de estos proyectos fueron con diseño propio y otros en
             colaboración o en la ejecución de proyectos de otros diseñadores como Ken
-            Dye, Bob Cupp, Gary Player Design y American Golf Design, entre otros.
+            Dye, Bob Cupp, Gary Player Design y American Golf Design.
           </p>
           <div className="mt-4 lg:mt-6 flex justify-start gap-2">
             <a

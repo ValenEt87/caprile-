@@ -3,7 +3,6 @@ import Navbar from './../../components/Navbar.jsx'
 import Footer from './../../components/Footer.jsx'
 import './../../App.css'
 import Hero from './../../components/Hero.jsx'
-import Card from './../../components/Card.jsx'
 import TestimonialCarousel from './../../components/TestimonialCarousel.jsx'
 import Services from './../../components/Services/Services.jsx'
 import { NavLink } from 'react-router-dom';
