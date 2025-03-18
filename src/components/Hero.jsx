@@ -6,10 +6,7 @@ import { useState, useEffect } from "react";
         image: "/imgs/ascochinga.jpg",
       },
       {
-        image: "/imgs/ascochinga2.jpg",
-      },
-      {
-        image: "/imgs/ascochinga3.jpg",
+        image: "/imgs/ascochinga2.webp",
       },
     ];
   

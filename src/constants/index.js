@@ -1,7 +1,7 @@
 // Importar las imágenes (simulando nombres únicos)
 import img1 from "/imgs/ascochinga.jpg";
 import img2 from "/imgs/jockeyclubsalta 2.jpg";
-import img3 from "/imgs/ascochinga3.jpg";
+import img3 from "/imgs/ascochinga3.webp";
 import img4 from "/imgs/ascochinga4.jpg";
 
 // LOS LAGARTOS URB
