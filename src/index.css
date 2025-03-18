@@ -94,35 +94,6 @@ body{
   font-weight: 700;
   font-style: normal;
 }
-
-/* .bg-hero{
-
-  background-image: url('/imgs/ascochinga.jpg');
-  background-size: cover;
-} */
-/* .bg-hero {
-  background-image: url('/imgs/ascochinga4.jpg');
-  background-size: cover;
-  background-position: center;
-  position: relative; 
-  z-index: 0;
-  border-radius: 20px;
-}
-
-.bg-hero::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #113B21;
-  opacity: 0.6;
-  z-index: -1;
-  pointer-events: none;
-  border-radius: 20px;
-} */
-
 .bg-hero {
   background-image: url('/imgs/ascochinga4.jpg');
   /* En desktop usamos la animación con tamaño numérico */
@@ -177,7 +148,7 @@ body{
 }
 .bg-services{
   /* background-image: url('/imgs/ascochinga.jpg'); */
-  background-image: url('../public/imgs/ascochinga.jpg');
+  background-image: url('/imgs/ascochinga.jpg');
   background-size: cover;
   background-position: center;
   position: relative; /* Necesario para el pseudo-elemento */
@@ -369,11 +340,6 @@ button:focus {
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-/* Hover para mejorar la sombra */
-/* .accordion-item:hover {
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  transform: translateY(-4px);
-} */
 
 /* Estilos del header del acordeón */
 .accordion-header {
@@ -389,10 +355,6 @@ button:focus {
   transition: background-color 0.3s ease;
 }
 
-/* Hover sobre el header del acordeón */
-/* .accordion-header:hover {
-  background-color: #1a5b37;
-} */
 
 /* Transición suave para el ícono */
 .accordion-header svg {

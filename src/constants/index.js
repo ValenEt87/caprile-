@@ -1,70 +1,70 @@
 // Importar las imágenes (simulando nombres únicos)
-import img1 from "../../public/imgs/ascochinga.jpg";
-import img2 from "../../public/imgs/jockeyclubsalta 2.jpg";
-import img3 from "../../public/imgs/ascochinga3.jpg";
-import img4 from "../../public/imgs/ascochinga4.jpg";
+import img1 from "/imgs/ascochinga.jpg";
+import img2 from "/imgs/jockeyclubsalta 2.jpg";
+import img3 from "/imgs/ascochinga3.jpg";
+import img4 from "/imgs/ascochinga4.jpg";
 
 // LOS LAGARTOS URB
-import img7 from "../../public/imgs/urbanizaciones/Los Lagartos.webp";
-import img8 from "../../public/imgs/urbanizaciones/lagartos.webp";
-import img9 from "../../public/imgs/urbanizaciones/lagartos1.webp";
-import img10 from "../../public/imgs/urbanizaciones/lagartos2.webp";
+import img7 from "/imgs/urbanizaciones/Los Lagartos.webp";
+import img8 from "/imgs/urbanizaciones/lagartos.webp";
+import img9 from "/imgs/urbanizaciones/lagartos1.webp";
+import img10 from "/imgs/urbanizaciones/lagartos2.webp";
 
 //El Nacional Gral Rodriguez URB
-import img11 from "../../public/imgs/urbanizaciones/El Nacional.webp";
-import img12 from "../../public/imgs/urbanizaciones/elnacional.webp";
-import img13 from "../../public/imgs/urbanizaciones/elnacional1.webp";
-import img14 from "../../public/imgs/urbanizaciones/elnacional2.webp";
-import img15 from "../../public/imgs/urbanizaciones/elnacional3.webp";
+import img11 from "/imgs/urbanizaciones/El Nacional.webp";
+import img12 from "/imgs/urbanizaciones/elnacional.webp";
+import img13 from "/imgs/urbanizaciones/elnacional1.webp";
+import img14 from "/imgs/urbanizaciones/elnacional2.webp";
+import img15 from "/imgs/urbanizaciones/elnacional3.webp";
 
 // La Cheltonia URB
-import img16 from "../../public/imgs/urbanizaciones/lacheltonia.webp";
-import img17 from "../../public/imgs/urbanizaciones/lacheltonia1.webp";
-import img18 from "../../public/imgs/urbanizaciones/lacheltonia2.webp";
+import img16 from "/imgs/urbanizaciones/lacheltonia.webp";
+import img17 from "/imgs/urbanizaciones/lacheltonia1.webp";
+import img18 from "/imgs/urbanizaciones/lacheltonia2.webp";
 
 //Springdale URB
-import img19 from "../../public/imgs/urbanizaciones/Springdale.webp";
+import img19 from "/imgs/urbanizaciones/Springdale.webp";
 
 //La Cañada URB
-import img20 from "../../public/imgs/urbanizaciones/lacheltonia.webp";
+import img20 from "/imgs/urbanizaciones/lacheltonia.webp";
 
 // La Estancia de Cafayate Diseñados
-import img21 from "../../public/imgs/disenados/La EstanciadeCafayate1.webp";
-import img22 from "../../public/imgs/disenados/La Estancia de Cafayate 4.webp";
-import img23 from "../../public/imgs/disenados/La Estancia de Cafayate 5.webp";
-import img24 from "../../public/imgs/disenados/La Estancia de Cafayate.webp";
+import img21 from "/imgs/disenados/La EstanciadeCafayate1.webp";
+import img22 from "/imgs/disenados/La Estancia de Cafayate 4.webp";
+import img23 from "/imgs/disenados/La Estancia de Cafayate 5.webp";
+import img24 from "/imgs/disenados/La Estancia de Cafayate.webp";
 
 //La Reserva Cardales diseñados
-import img25 from "../../public/imgs/disenados/La Reserva Cardales (1).webp";
-import img26 from "../../public/imgs/disenados/La Reserva Cardales 2.webp";
-import img27 from "../../public/imgs/disenados/La Reserva Cardales.webp";
+import img25 from "/imgs/disenados/La Reserva Cardales (1).webp";
+import img26 from "/imgs/disenados/La Reserva Cardales 2.webp";
+import img27 from "/imgs/disenados/La Reserva Cardales.webp";
 
 //La Rioja Golf Club diseñados
-import img28 from "../../public/imgs/disenados/La Rioja Golf Club (1).webp";
-import img29 from "../../public/imgs/disenados/La Rioja Golf Club.webp"
+import img28 from "/imgs/disenados/La Rioja Golf Club (1).webp";
+import img29 from "/imgs/disenados/La Rioja Golf Club.webp"
 
 // La Reserva Camboriú diseñados
-import img30 from "../../public/imgs/disenados/Camboriu1.webp";
-import img31 from "../../public/imgs/disenados/Camboriu (2).webp";
-import img32 from "../../public/imgs/disenados/Camboriu.webp";
+import img30 from "/imgs/disenados/Camboriu1.webp";
+import img31 from "/imgs/disenados/Camboriu (2).webp";
+import img32 from "/imgs/disenados/Camboriu.webp";
 
 //Estancia Villa María diseñados
-import img5 from "../../public/imgs/disenados/estancia-villa-maria.webp";
-import img6 from "../../public/imgs/disenados/estancia-villa-maria-2.webp";
+import img5 from "/imgs/disenados/estancia-villa-maria.webp";
+import img6 from "/imgs/disenados/estancia-villa-maria-2.webp";
 
 // AAG Pilar Remodelados
-import img33 from "../../public/imgs/remodelados/AAGpilar.webp";
-import img34 from "../../public/imgs/remodelados/AAGpilar2.webp";
-import img35 from "../../public/imgs/remodelados/AAGpilar3.webp";
+import img33 from "/imgs/remodelados/AAGpilar.webp";
+import img34 from "/imgs/remodelados/AAGpilar2.webp";
+import img35 from "/imgs/remodelados/AAGpilar3.webp";
 
 // Cariló Golf Remodelados
-import img36 from "../../public/imgs/remodelados/Carilo Golf Club.webp";
-import img37 from "../../public/imgs/remodelados/carilo golf.webp";
-import img38 from "../../public/imgs/remodelados/carilo3.webp";
+import img36 from "/imgs/remodelados/Carilo Golf Club.webp";
+import img37 from "/imgs/remodelados/carilo golf.webp";
+import img38 from "/imgs/remodelados/carilo3.webp";
 
 //Estancias del Pilar
-import img39 from "../../public/imgs/remodelados/Estancias del Pilar.webp";
-import img40 from "../../public/imgs/remodelados/estanciasdelpilar.webp";
+import img39 from "/imgs/remodelados/Estancias del Pilar.webp";
+import img40 from "/imgs/remodelados/estanciasdelpilar.webp";
 
 export const golfCourses = [
   {
@@ -143,7 +143,6 @@ export const golfCourses = [
       },
     ]
   },
-  /////////////////////////////////////////////////////////////////////////////////////////////////////
   ////////////////////////////////////////////////////////////////////////////////////////////////////
   ///////////////////////////////////////////////////////////////////////////////////////////////////
   ///////////REMODELADAS E INTERVENIDAS/////////////////////////////////////////////////////////////
