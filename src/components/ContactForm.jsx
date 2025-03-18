@@ -68,7 +68,7 @@ const ContactForm = () => {
 
         {/* Formulario */}
         <div className="col-span-12 lg:col-start-7 lg:col-span-5 bg-white-bmr text-gray-900 rounded-xl shadow-lg p-5 lg:p-6 lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-top-30 w-full">
-          <form onSubmit={onSubmit} className="space-y-4 mt-4">
+          <form onSubmit={onSubmit} className="space-y-4">
             <div>
             <input type="hidden" name="from_name" value="" />
               <label htmlFor="nombre" className="block font-semibold mb-1">

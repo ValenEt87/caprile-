@@ -5,7 +5,7 @@ import { testimonialImages } from '../constants';
 const TestimonialCarousel = () => {
   return (
     <section
-      className="grid grid-cols-12 pb-20 lg:pt-12 lg:gap-5 items-center mx-5 md:mx-0"
+      className="grid grid-cols-12 pb-24 lg:pt-4 lg:gap-5 items-center mx-5 md:mx-0"
       data-aos="fade-up"
       data-aos-duration="800"
       data-aos-easing="ease-in-out"
