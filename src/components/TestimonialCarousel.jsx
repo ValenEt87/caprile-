@@ -11,7 +11,7 @@ const TestimonialCarousel = () => {
       data-aos-easing="ease-in-out"
     >
       {/* Contenedor del texto */}
-      <div className="col-span-12 lg:col-span-5 lg:col-start-2 lg:ps-4 order-2 lg:order-1">
+      <div className="col-span-12 lg:col-span-5 lg:col-start-2 lg:px-4 order-2 lg:order-1">
         <h2 className="text-3xl lg:text-5xl font-medium mb-3">
           Somos representantes exclusivos de Gary Player Design en latinoamérica.
         </h2>

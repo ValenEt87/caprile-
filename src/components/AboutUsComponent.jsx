@@ -20,7 +20,7 @@ const AboutUsComponent = () => {
   
         {/* Contenedor del texto */}
         <div
-          className="col-span-12 lg:col-span-5 lg:pe-4"
+          className="col-span-12 lg:col-span-5 lg:pe-6"
           data-aos="fade-up"
           data-aos-duration="500"
           data-aos-easing="ease-in-out"

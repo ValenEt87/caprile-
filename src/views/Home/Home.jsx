@@ -48,6 +48,7 @@ const Home = () => {
             <AboutUsComponent />
             <TestimonialCarousel />
             <ContactForm />
+            <WhatsAppButton />
             <Footer />
         </>
     )
