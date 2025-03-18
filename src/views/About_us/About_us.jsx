@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from './../../components/Navbar.jsx'
 import ImageCarousel from '../../components/ImageCarousel.jsx'
-import { AboutUsImages } from '../../constants/index.js';
+import WhatsAppButton from '../../components/WhatsAppButton.jsx';
 import { historiacalImages } from '../../constants/index.js';
 import { actualImages } from '../../constants/index.js';
 import ContactForm from './../../components/ContactForm.jsx'
@@ -60,6 +60,7 @@ const About_us = () => {
           </div>
         </div>
         <ContactForm />
+        <WhatsAppButton />
         <Footer />
     </>
   )

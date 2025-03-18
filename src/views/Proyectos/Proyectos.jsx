@@ -5,6 +5,7 @@ import ProjectsSection from "./../../components/ProjectsSection.jsx";
 import ProjectsWithoutImagesList from "./../../components/ProjectsWithoutImagesList.jsx";
 import ContactForm from "./../../components/ContactForm.jsx";
 import Footer from "./../../components/Footer.jsx";
+import WhatsAppButton from '../../components/WhatsAppButton.jsx';
 import { golfCourses } from "../../constants";
 
 const Proyectos = () => {
@@ -141,6 +142,7 @@ const Proyectos = () => {
         />
       )}
       <ContactForm />
+      <WhatsAppButton />
       <Footer />
     </>
   );
