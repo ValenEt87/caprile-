@@ -18,7 +18,7 @@ const ContactForm = () => {
     // Usa el valor del campo "nombre" como "from_name"
     formData.set("from_name", event.target.nombre.value);
     // Agrega la access_key y el asunto personalizado
-    formData.append("access_key", "e9feab04-9763-4773-992d-422bff2cc3d2");
+    formData.append("access_key", "66d3844c-db37-4719-bfbb-4a2365583d49");
     formData.append("subject", "Nuevo contacto desde el sitio web");
   
     try {
