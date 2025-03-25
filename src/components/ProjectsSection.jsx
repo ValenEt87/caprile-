@@ -12,9 +12,14 @@ const ProjectsSection = () => {
     const loadProjects = () => {
       const limitedProjects = {};
   
-      golfCourses.forEach((categoryObj) => {
+      //golfCourses.forEach((categoryObj) => {
         // Limitar a tres proyectos por categoría
-        limitedProjects[categoryObj.category] = categoryObj.courses.slice(0, 3);
+        //limitedProjects[categoryObj.category] = categoryObj.courses.slice(0, 3);
+      //});
+      golfCourses.forEach((categoryObj, index) => {
+        limitedProjects[categoryObj.category] = index === 0
+          ? categoryObj.courses.slice(0, 6)
+          : categoryObj.courses.slice(0, 3);
       });
   
       setProjectsByCategory(limitedProjects);
