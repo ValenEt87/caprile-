@@ -7,7 +7,7 @@ const Accordion = ({ title, items, isOpen, onClick }) => (
       onClick={onClick}
     >
       <h3 className="font-medium text-lg lg:text-xl color-white-bmr">{title}</h3>
-      {isOpen ? (
+      {/* {isOpen ? (
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="16"
@@ -29,7 +29,7 @@ const Accordion = ({ title, items, isOpen, onClick }) => (
         >
           <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
         </svg>
-      )}
+      )} */}
     </div>
     <div className={`accordion-body ${isOpen ? "active" : ""}`}>
       <ul className="list-none">
@@ -102,7 +102,7 @@ const ServiceSection = () => {
                 key={index}
                 title={accordion.title}
                 items={accordion.items}
-                isOpen={openIndex === index}
+                isOpen={true}
                 onClick={() => handleAccordionClick(index)}
               />
             ))}

@@ -1,32 +1,35 @@
 // Importar las imágenes (simulando nombres únicos)
-import img1 from "/imgs/ascochinga.jpg";
-import img2 from "/imgs/jockeyclubsalta 2.jpg";
-import img3 from "/imgs/ascochinga3.webp";
-import img4 from "/imgs/ascochinga4.jpg";
+import img1 from "/imgs/disenados/ascochinga.jpg";
+import img3 from "/imgs/disenados/Ascochinga5.webp";
+import img4 from "/imgs/disenados/ascochinga4.jpg";
 
 // LOS LAGARTOS URB
 import img7 from "/imgs/urbanizaciones/Los Lagartos.webp";
-import img8 from "/imgs/urbanizaciones/lagartos.webp";
-import img9 from "/imgs/urbanizaciones/lagartos1.webp";
-import img10 from "/imgs/urbanizaciones/lagartos2.webp";
+import img13 from "/imgs/urbanizaciones/LosLagartos.webp";
 
 //El Nacional Gral Rodriguez URB
-import img11 from "/imgs/urbanizaciones/El Nacional.webp";
-import img12 from "/imgs/urbanizaciones/elnacional.webp";
-import img13 from "/imgs/urbanizaciones/elnacional1.webp";
-import img14 from "/imgs/urbanizaciones/elnacional2.webp";
-import img15 from "/imgs/urbanizaciones/elnacional3.webp";
+import img11 from "/imgs/urbanizaciones/el nacional 4.webp";
+import img12 from "/imgs/urbanizaciones/El Nacional.webp";
 
-// La Cheltonia URB
-import img16 from "/imgs/urbanizaciones/lacheltonia.webp";
-import img17 from "/imgs/urbanizaciones/lacheltonia1.webp";
-import img18 from "/imgs/urbanizaciones/lacheltonia2.webp";
+//EL VALLE DE TANDIL
+import img41 from "/imgs/disenados/Valle de Tandil.webp";
+import img42 from "/imgs/disenados/Valle de Tandil1.webp";
+
+//JOCKEY CLUB DE SALTA
+import img14 from "/imgs/disenados/jockeyclubsalta.webp";
+import img15 from "/imgs/disenados/Jockey Club de Salta (1).webp";
+
+// Martindale
+import img156 from "/imgs/disenados/Martindale.webp";
+import img16 from "/imgs/disenados/Martindale 1.webp";
+import img17 from "/imgs/disenados/Martindale (2).webp";
+import img18 from "/imgs/disenados/Martindale (4).webp";
 
 //Springdale URB
 import img19 from "/imgs/urbanizaciones/Springdale.webp";
 
 //La Cañada URB
-import img20 from "/imgs/urbanizaciones/lacheltonia.webp";
+import img20 from "/imgs/disenados/Algodon Wine & Golf.webp";
 
 // La Estancia de Cafayate Diseñados
 import img21 from "/imgs/disenados/La EstanciadeCafayate1.webp";
@@ -35,9 +38,9 @@ import img23 from "/imgs/disenados/La Estancia de Cafayate 5.webp";
 import img24 from "/imgs/disenados/La Estancia de Cafayate.webp";
 
 //La Reserva Cardales diseñados
-import img25 from "/imgs/disenados/La Reserva Cardales (1).webp";
-import img26 from "/imgs/disenados/La Reserva Cardales 2.webp";
-import img27 from "/imgs/disenados/La Reserva Cardales.webp";
+import img25 from "/imgs/disenados/lareservacardale2.webp";
+import img26 from "/imgs/disenados/lareservacardales1.webp";
+import img27 from "/imgs/disenados/lareservacardales.webp";
 
 //La Rioja Golf Club diseñados
 import img28 from "/imgs/disenados/La Rioja Golf Club (1).webp";
@@ -52,40 +55,73 @@ import img32 from "/imgs/disenados/Camboriu.webp";
 import img5 from "/imgs/disenados/estancia-villa-maria.webp";
 import img6 from "/imgs/disenados/estancia-villa-maria-2.webp";
 
-// AAG Pilar Remodelados
-import img33 from "/imgs/remodelados/AAGpilar.webp";
-import img34 from "/imgs/remodelados/AAGpilar2.webp";
-import img35 from "/imgs/remodelados/AAGpilar3.webp";
+// HARAS SANTA MARIA
+import img33 from "/imgs/disenados/harassantamaria.webp";
 
 // Cariló Golf Remodelados
 import img36 from "/imgs/remodelados/Carilo Golf Club.webp";
-import img37 from "/imgs/remodelados/carilo golf.webp";
-import img38 from "/imgs/remodelados/carilo3.webp";
+
+
+//MAYLING
+import img37 from "/imgs/disenados/Mayling.webp";
+
+//SILENTE URUGUAY
+import img40 from "/imgs/disenados/Silente.webp";
 
 //Estancias del Pilar
 import img39 from "/imgs/remodelados/Estancias del Pilar.webp";
-import img40 from "/imgs/remodelados/estanciasdelpilar.webp";
+
+//CUBA FATIMA REMODELADOS
+import img43 from "/imgs/remodelados/CUBA Fatima.webp";
+import img44 from "/imgs/remodelados/CUBA1.webp";
+import img45 from "/imgs/remodelados/cuba2.webp";
+import img46 from "/imgs/remodelados/cuba3.webp";
+
+//Valle Escondido DISEÑADAS
+import img47 from "/imgs/disenados/valleescondido.webp";
+import img48 from "/imgs/disenados/valleescondido1.webp";
+import img49 from "/imgs/disenados/Vallescondido.webp";
 
 export const golfCourses = [
   {
     category: "Diseñados-y-construidos",
     courses: [
       {
+      title: "La Estancia de Cafayate (Salta) cc Arq. Bob Cupp",
+      coverImage: img21,
+      images: [
+        { src: img21, alt: "" },
+        { src: img22, alt: "" },
+        { src: img23, alt: "" },
+        { src: img24, alt: "" }
+      ]
+    }, 
+    {
+        title: "Martindale Country Club (Pilar, Bs As)",
+        coverImage: img16,
+        images: [
+          { src: img156, alt: "" },
+          { src: img16, alt: "" },
+          { src: img17, alt: "" },
+          { src: img18, alt: "" }
+        ]
+      },
+    {
+      title: "La Reserva Cardales (Buenos Aires)",
+      coverImage: img25,
+      images: [
+        { src: img25, alt: "Vista cancha La Reserva de Cardales" },
+        { src: img26, alt: "Vista cancha La Reserva de Cardales" },
+        { src: img27, alt: "Vista cancha La Reserva de Cardales" },
+      ]
+    },
+      {
         title: "Ascochinga Golf Club (Córdoba)",
         coverImage: img1,
         images: [
-          { src: img1, alt: "Vista aérea de Los Lagartos Country Club" },
-          { src: img2, alt: "Detalle del campo en Los Lagartos Country Club" },
-          { src: img3, alt: "Green del campo en Los Lagartos Country Club" }
-        ]
-      },
-      {
-        title: "Martindale Country Club (Pilar, Bs As)",
-        coverImage: img2,
-        images: [
-          { src: img4, alt: "Vista panorámica de Mayling Club de Campo" },
-          { src: img5, alt: "Detalle del fairway en Mayling Club de Campo" },
-          { src: img6, alt: "Green del campo en Mayling Club de Campo" }
+          { src: img1, alt: "" },
+          { src: img4, alt: "" },
+          { src: img3, alt: "" }
         ]
       },
       {
@@ -98,31 +134,11 @@ export const golfCourses = [
         ]
       },
       {
-        title: "La Estancia de Cafayate (Salta) cc Arq. Bob Cupp",
-        coverImage: img21,
-        images: [
-          { src: img21, alt: "" },
-          { src: img22, alt: "" },
-          { src: img23, alt: "" },
-          { src: img24, alt: "" }
-        ]
-      }, 
-      {
-        title: "La Reserva Cardales (Buenos Aires)",
-        coverImage: img27,
-        images: [
-          { src: img25, alt: "" },
-          { src: img26, alt: "" },
-          { src: img27, alt: "" },
-        ]
-      },
-      {
         title: "El Valle de Tandil (cc Arq. Marcos Capdepont)",
-        coverImage: img4,
+        coverImage: img42,
         images: [
-          { src: img1, alt: "Vista aérea de Los Lagartos Country Club" },
-          { src: img2, alt: "Detalle del campo en Los Lagartos Country Club" },
-          { src: img3, alt: "Green del campo en Los Lagartos Country Club" }
+          { src: img41, alt: "" },
+          { src: img42, alt: "" }
         ]
       },
       {
@@ -141,6 +157,51 @@ export const golfCourses = [
           { src: img6, alt: "" }
         ]
       },
+      {
+        title: "Algodon Wine Estates (Mendoza) cc Ricky Jurado.",
+        coverImage: img20,
+        images: [
+          { src: img20, alt: "Algodon Wine Estates (Mendoza)" },
+        ]
+      },
+      {
+        title: "Haras Santa María (Escobar, Buenos Aires)",
+        coverImage: img33,
+        images: [
+          { src: img33, alt: "Campo Haras Santa María (Escobar, Buenos Aires)" },
+        ]
+      },
+      {
+        title: "Jockey Club de Salta - (Salta)",
+        coverImage: img14,
+        images: [
+          { src: img14, alt: "Imagen de green en Jockey CLub de Salta" },
+          { src: img15, alt: "Imagen de Jockey CLub de Salta" },
+        ]
+      },
+      {
+        title: "Mayling Club de Campo - (Pilar, Buenos Aires)",
+        coverImage: img37,
+        images: [
+          { src: img37, alt: "Mayling Club de Campo" },
+        ]
+      },
+      {
+        title: "Silente Club de Mar (Punta del Este, Uruguay) ",
+        coverImage: img40,
+        images: [
+          { src: img40, alt: "Silente Club de Mar (Punta del Este, Uruguay) " },
+        ]
+      },
+      {
+        title: "Valle Escondido G.C.(Neuquén) ",
+        coverImage: img49,
+        images: [
+          { src: img47, alt: "Valle Escondido G.C. (San Martín de los Andes, Neuquén)" },
+          { src: img48, alt: "Valle Escondido G.C. (San Martín de los Andes, Neuquén)" },
+          { src: img49, alt: "Valle Escondido G.C. (San Martín de los Andes, Neuquén)" },
+        ]
+      },
     ]
   },
   ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -153,21 +214,22 @@ export const golfCourses = [
     category: "Remodelados-e-intervenidos",
     courses: [
       {
-        title: "Asoc. Argentina de Golf (Pilar, Bs As)",
-        coverImage: img33,
-        images: [
-          { src: img33, alt: "Vista del campo Asociación Argentina de Golf" },
-          { src: img34, alt: "Vista del campo Asociación Argentina de Golf" },
-          { src: img35, alt: "Vista del campo Asociación Argentina de Golf" },
-        ]
-      },
-      {
         title: "Cariló Golf Club (Buenos Aires)",
         coverImage: img36,
         images: [
           { src: img36, alt: "Vista del campo del Cariló Golf Club" },
-          { src: img37, alt: "Vista del campo del Cariló Golf Club" },
-          { src: img38, alt: "Vista del campo del Cariló Golf Club" },
+          /* { src: img37, alt: "Vista del campo del Cariló Golf Club" },
+          { src: img38, alt: "Vista del campo del Cariló Golf Club" }, */
+        ]
+      },
+      {
+        title: "CUBA Fátima (Buenos Aires)",
+        coverImage: img43,
+        images: [
+          { src: img43, alt: "Vista del campo CUBA Fátima Buenos Aires" },
+          { src: img44, alt: "Vista del campo CUBA Fátima Buenos Aires" },
+          { src: img45, alt: "Vista del campo CUBA Fátima Buenos Aires" },
+          { src: img46, alt: "Vista del campo CUBA Fátima Buenos Aires" },
         ]
       },
       {
@@ -175,7 +237,7 @@ export const golfCourses = [
         coverImage: img39,
         images: [
           { src: img39, alt: "Vista del campo del Estancias del Pilar" },
-          { src: img40, alt: "Vista del campo del Estancias del Pilar" }
+         /*  { src: img40, alt: "Vista del campo del Estancias del Pilar" } */
         ]
       }
     ]
@@ -188,9 +250,9 @@ export const golfCourses = [
         coverImage: img7,
         images: [
           { src: img7, alt: "Campo principal de Los Lagartos Country Club" },
-          { src: img8, alt: "Campo principal de Los Lagartos Country Club" },
-          { src: img9, alt: "Campo principal de Los Lagartos Country Club" },
-          { src: img10, alt: "Campo principal de Los Lagartos Country Club" }
+          { src: img13, alt: "Campo de Los Lagartos Country Club" },
+          /* { src: img9, alt: "Campo principal de Los Lagartos Country Club" },
+          { src: img10, alt: "Campo principal de Los Lagartos Country Club" } */
         ]
       },
       {
@@ -199,12 +261,9 @@ export const golfCourses = [
         images: [
           { src: img11, alt: "Campo principal de El Nacional Golf Club" },
           { src: img12, alt: "Campo principal de El Nacional Golf Club" },
-          { src: img13, alt: "Campo principal de El Nacional Golf Club" },
-          { src: img14, alt: "Campo principal de El Nacional Golf Club" },
-          { src: img15, alt: "Campo principal de El Nacional Golf Club" },
         ]
       },
-      {
+      /* {
         title: "La Cheltonia (Venado Tuerto, Bs As)",
         coverImage: img16,
         images: [
@@ -212,7 +271,7 @@ export const golfCourses = [
           { src: img17, alt: "Campo principal La Cheltonia" },
           { src: img18, alt: "Campo principal La Cheltonia" },
         ]
-      },
+      }, */
       {
         title: "Springdale Barrio Cerrado (Pilar, Bs.As.)",
         coverImage: img19,
@@ -237,21 +296,16 @@ export const projectsWithoutImages = [
     category: "Diseñados-y-construidos",
     courses: [
       { title: "Los Lagartos Country Club - (Pilar, Buenos Aires)" },
-      { title: "Mayling Club de Campo - (Pilar, Buenos Aires)" },
       { title: "La Barra Golf Club - (Punta del Este, Uruguay). En colaboracion con Emilio Serra" },
       { title: "Abril Country Club - (Hudson, Buenos Aires). En colaboracion con el Arq. Marcos Capdepont" },
       { title: "Jockey Club de Venado Tuerto - (Venado Tuerto, Santa Fe)" },
-      { title: "Algodon Wine Estates - (San Rafael, Mendoza). En colaboración con Ricky Jurado." },
-      { title: "Jockey Club de Salta - (Salta)" },
       { title: "La Vacherie C.C. (Alto Lunlunta, Mendoza). En colaboracion con el Arq. Marcos Capdepont" },
       { title: "Estancia Villa Maria - (Cañuelas, Buenos Aires). Diseño de American Golf." },
-      { title: "Haras Santa Maria - (Escobar, Buenos Aires)" },
       { title: "Valle Escondido G.C. - (San Martín de los Andes, Neuquén)" },
       { title: "La Primavera C.C. - (Lujan, Buenos Aires)" },
       { title: "Medal Golf Club - (Pilar, Buenos Aires)" },
       { title: "Haras Los Moros - (Suipacha, Buenos Aires)" },
       { title: "La Lomada - (Pilar, Buenos Aires)" },
-      { title: "Silente Club de Mar - (Punta del Este, Uruguay)" },
       { title: "ALG Golf Center - (Pilar, Buenos Aires)" },
       { title: "Grand Bell C.C. - (City Bell, Buenos Aires). Diseño de Roberto De Vicenzo." }
     ]
@@ -280,7 +334,8 @@ export const projectsWithoutImages = [
   {
     category: "Urbanizaciones",
     courses: [
-      { title: "La Cañada Golf - (Open Door, Pcia. de Bs.As.)" }
+      { title: "La Cañada Golf - (Open Door, Pcia. de Bs.As.)" },
+      { title: "La Cheltonia (Venado Tuerto, Pcia. de Bs.As.)" },
     ]
   }
 ];
