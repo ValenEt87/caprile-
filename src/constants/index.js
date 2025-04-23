@@ -353,9 +353,9 @@ export const actualImages = [
 ];
 
 export const testimonialImages = [
-  "/imgs/gary3.webp",
-  "/imgs/gary.webp",
   "/imgs/gary2.webp",
+  "/imgs/gary.webp",
+  "/imgs/gary3.webp",
 ];
 
 export const AboutUsImages = [

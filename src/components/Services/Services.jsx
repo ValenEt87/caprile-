@@ -19,11 +19,11 @@ const Services = () => {
       value: 40,
       title: 'Canchas',
       description:
-        'Con diseño propio y o en colaboración con otros diseñadores como Ken Dye, Bob Cupp, Gary Player Design y American Golf Design, entre otros.',
+        'Desarrolladas con diseño propio y o en colaboración con otros diseñadores.',
     },
     {
       value: 50,
-      title: 'Años al servicio',
+      title: 'Años de experiencia',
       description:
         'A fines de los años 60, los hermanos Diego y Alberto Caprile, deciden diseñar y construir su primer campo de golf en Buenos Aires.',
     },

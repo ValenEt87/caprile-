@@ -63,7 +63,7 @@ const ServiceSection = () => {
     },
     {
       title: "Construcción y gestión del proyecto",
-      items: ["Routing Plan", "Ubicación de Club House", "Cart Paths", "Altimetría", "Movimiento de suelos", "Planos de detalle", "Drenajes", "Riegos", "Vistas", "Deforestación"],
+      items: ["1Routing Plan", "Ubicación de Club House", "Cart Paths", "Altimetría", "Movimiento de suelos", "Planos de detalle", "Drenajes", "Riegos", "Vistas", "Deforestación"],
     },
   ];
 
@@ -75,7 +75,7 @@ const ServiceSection = () => {
 
   return (
     <>
-    <section className="py-8 lg:pb-20 lg:pt-12 bg-fixed bg-center bg-no-repeat grid grid-cols-12 mx-5 md:px-5 lg:px-0"  data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-out">
+   {/*  <section className="py-8 lg:pb-20 lg:pt-12 bg-fixed bg-center bg-no-repeat grid grid-cols-12 mx-5 md:px-5 lg:px-0"  data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-out">
       <div className="col-span-12 lg:col-span-5 lg:col-start-2 flex flex-col justify-center items-start order-2 lg:order-1">
         <h2 className="text-3xl lg:text-5xl font-medium mb-3 lg:pe-20">
            Un buen diseño integra el paisaje existente con la cancha a construir.
@@ -86,7 +86,7 @@ const ServiceSection = () => {
         <a
           href="#contacto"
           onClick={(e) => {
-            e.preventDefault(); // Evita el comportamiento predeterminado del enlace
+            e.preventDefault();
             document.getElementById("contacto")?.scrollIntoView({ behavior: "smooth" });
           }}
           className="bg-green-950 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-900 transition duration-500 flex items-center gap-2"
@@ -110,8 +110,8 @@ const ServiceSection = () => {
           </div>
         </div>
       </div>
-    </section>
-    <section class="bg-services h-dvh bg-fixed bg-center bg-no-repeat text-white py-16 content-center">
+    </section> */}
+    <section class="bg-services h-dvh bg-fixed bg-center bg-no-repeat text-white py-16 content-center mx-8 rounded-2xl">
                 <div class="grid grid-cols-12 mx-5 gap-5">
                     <div className='col-span-12 text-center flex flex-col items-center'>
                         {/* <img src="/public/arco-separador.svg" alt="" className='w-24 mb-9' /> */}
@@ -127,8 +127,8 @@ const ServiceSection = () => {
                         >
                             <path d="M975.2,119.57c-157.3-58.66-319.79-88.72-487.61-88C320.44,32.35,158,60.14,1.23,119.71a.75.75,0,0,1-1-.49l-.1-.34A.75.75,0,0,1,.51,118c3.73-2.08,7.42-4.23,11.2-6.21C50.11,91.7,90,75.1,130.91,60.78,181.24,43.15,232.55,29,285,19.59c31.37-5.63,63-10,94.64-13.78C421.32.85,463.23-.55,505.18.18A1096,1096,0,0,1,625.52,8.9,1071.71,1071.71,0,0,1,886.23,76,753,753,0,0,1,971.74,116c1.15.63,2.26,1.33,3.38,2a.74.74,0,0,1,.32.87Z" />
                         </svg>
-                        <h2 class="text-3xl lg:text-4xl font-bold text-center">Brindamos un servicio integral</h2>
-                        <p class="text-center text-lg mb-10">Nuestra experiencia puede ayudarlo a optimizar sus costos y obtener los mejores resultados.</p>
+                        <h2 class="text-3xl lg:text-4xl font-bold text-center max-w-2xl">Un buen diseño debería lograr una cancha entretenida pero competitiva.</h2>
+                        <p class="text-center text-lg mb-10">Integrada al paisaje existente y al master plan urbanístico.</p>
                     </div>
                     
                     <div class="col-span-10 col-start-2 grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
@@ -166,23 +166,23 @@ const ServiceSection = () => {
                                         <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
                                     </svg> Impacto ambiental
                                 </li>
+                                <li className='flex items-center gap-2'>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                        <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
+                                    </svg> Sustentabilidad
+                                </li>
                             </ul>
                         </div>
                         
                         <div>
-                            <h3 class="text-xl font-semibold mb-4">Planimetría y documentación:</h3>
+                            <h3 class="text-xl font-semibold mb-4">Construcción y gestión del proyecto:</h3>
                             <ul class="space-y-2">
                                 <li className='flex items-center gap-2'>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
                                         <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
                                         <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
                                     </svg> Routing Plan
-                                </li>
-                                <li className='flex items-center gap-2'>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
-                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
-                                        <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
-                                    </svg> Ubicación de Club House
                                 </li>
                                 <li className='flex items-center gap-2'>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
