@@ -1,77 +1,77 @@
 import React, { useState } from "react";
 
-const Accordion = ({ title, items, isOpen, onClick }) => (
-  <div className={`accordion-item ${isOpen ? "active" : ""}`}>
-    <div
-      className={`accordion-header ${isOpen ? "active" : ""} flex justify-between items-center p-4 cursor-pointer`}
-      onClick={onClick}
-    >
-      <h3 className="font-medium text-lg lg:text-xl color-white-bmr">{title}</h3>
-      {/* {isOpen ? (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="16"
-          fill="currentColor"
-          className="bi bi-dash text-white"
-          viewBox="0 0 16 16"
-        >
-          <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8" />
-        </svg>
-      ) : (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="16"
-          fill="currentColor"
-          className="bi bi-plus text-white"
-          viewBox="0 0 16 16"
-        >
-          <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
-        </svg>
-      )} */}
-    </div>
-    <div className={`accordion-body ${isOpen ? "active" : ""}`}>
-      <ul className="list-none">
-        {items.map((item, index) => (
-          <li key={index} className="flex items-center gap-2 mb-2 text-sm text-white">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              className="text-white"
-              viewBox="0 0 16 16"
-            >
-              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
-              <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
-            </svg>
-            {item}
-          </li>
-        ))}
-      </ul>
-    </div>
-  </div>
-);
+// const Accordion = ({ title, items, isOpen, onClick }) => (
+//   <div className={`accordion-item ${isOpen ? "active" : ""}`}>
+//     <div
+//       className={`accordion-header ${isOpen ? "active" : ""} flex justify-between items-center p-4 cursor-pointer`}
+//       onClick={onClick}
+//     >
+//       <h3 className="font-medium text-lg lg:text-xl color-white-bmr">{title}</h3>
+//       {isOpen ? (
+//         <svg
+//           xmlns="http://www.w3.org/2000/svg"
+//           width="16"
+//           height="16"
+//           fill="currentColor"
+//           className="bi bi-dash text-white"
+//           viewBox="0 0 16 16"
+//         >
+//           <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8" />
+//         </svg>
+//       ) : (
+//         <svg
+//           xmlns="http://www.w3.org/2000/svg"
+//           width="16"
+//           height="16"
+//           fill="currentColor"
+//           className="bi bi-plus text-white"
+//           viewBox="0 0 16 16"
+//         >
+//           <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+//         </svg>
+//       )}
+//     </div>
+//     <div className={`accordion-body ${isOpen ? "active" : ""}`}>
+//       <ul className="list-none">
+//         {items.map((item, index) => (
+//           <li key={index} className="flex items-center gap-2 mb-2 text-sm text-white">
+//             <svg
+//               xmlns="http://www.w3.org/2000/svg"
+//               width="16"
+//               height="16"
+//               fill="currentColor"
+//               className="text-white"
+//               viewBox="0 0 16 16"
+//             >
+//               <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+//               <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+//             </svg>
+//             {item}
+//           </li>
+//         ))}
+//       </ul>
+//     </div>
+//   </div>
+// );
 
 
 const ServiceSection = () => {
-  const accordionData = [
-    {
-      title: "Análisis y viabilidad del proyecto",
-      items: ["Permisos", "Calidad de Suelos y Aguas", "Factibilidad técnica", "Topografía y vegetación", "Impacto ambiental"],
-    },
-    {
-      title: "Construcción y gestión del proyecto",
-      items: ["1Routing Plan", "Ubicación de Club House", "Cart Paths", "Altimetría", "Movimiento de suelos", "Planos de detalle", "Drenajes", "Riegos", "Vistas", "Deforestación"],
-    },
-  ];
+//   const accordionData = [
+//     {
+//       title: "Análisis y viabilidad del proyecto",
+//       items: ["Permisos", "Calidad de Suelos y Aguas", "Factibilidad técnica", "Topografía y vegetación", "Impacto ambiental"],
+//     },
+//     {
+//       title: "Construcción y gestión del proyecto",
+//       items: ["1Routing Plan", "Ubicación de Club House", "Cart Paths", "Altimetría", "Movimiento de suelos", "Planos de detalle", "Drenajes", "Riegos", "Vistas", "Deforestación"],
+//     },
+//   ];
 
-  const [openIndex, setOpenIndex] = useState(1); // El segundo acordeón estará abierto por defecto.
+  // const [openIndex, setOpenIndex] = useState(1); 
 
-  const handleAccordionClick = (index) => {
-    setOpenIndex(openIndex === index ? -1 : index); // Abre/cierra el acordeón.
-  };
+  // const handleAccordionClick = (index) => {
+  //   setOpenIndex(openIndex === index ? -1 : index);
+  // };
 
   return (
     <>
@@ -111,7 +111,7 @@ const ServiceSection = () => {
         </div>
       </div>
     </section> */}
-    <section class="bg-services h-dvh bg-fixed bg-center bg-no-repeat text-white py-16 content-center mx-5 lg:mx-8 rounded-2xl">
+    <section class="bg-services bg-fixed bg-center bg-no-repeat text-white py-16 content-center mx-5 lg:mx-8 rounded-2xl">
                 <div class="grid grid-cols-12 mx-5 gap-5">
                     <div className='col-span-12 text-center flex flex-col items-center mb-5'>
                         {/* <img src="/public/arco-separador.svg" alt="" className='w-24 mb-9' /> */}
