@@ -111,9 +111,9 @@ const ServiceSection = () => {
         </div>
       </div>
     </section> */}
-    <section class="bg-services h-dvh bg-fixed bg-center bg-no-repeat text-white py-16 content-center mx-8 rounded-2xl">
+    <section class="bg-services h-dvh bg-fixed bg-center bg-no-repeat text-white py-16 content-center mx-5 lg:mx-8 rounded-2xl">
                 <div class="grid grid-cols-12 mx-5 gap-5">
-                    <div className='col-span-12 text-center flex flex-col items-center'>
+                    <div className='col-span-12 text-center flex flex-col items-center mb-5'>
                         {/* <img src="/public/arco-separador.svg" alt="" className='w-24 mb-9' /> */}
                         <svg
                             id="Capa_1"
@@ -128,10 +128,10 @@ const ServiceSection = () => {
                             <path d="M975.2,119.57c-157.3-58.66-319.79-88.72-487.61-88C320.44,32.35,158,60.14,1.23,119.71a.75.75,0,0,1-1-.49l-.1-.34A.75.75,0,0,1,.51,118c3.73-2.08,7.42-4.23,11.2-6.21C50.11,91.7,90,75.1,130.91,60.78,181.24,43.15,232.55,29,285,19.59c31.37-5.63,63-10,94.64-13.78C421.32.85,463.23-.55,505.18.18A1096,1096,0,0,1,625.52,8.9,1071.71,1071.71,0,0,1,886.23,76,753,753,0,0,1,971.74,116c1.15.63,2.26,1.33,3.38,2a.74.74,0,0,1,.32.87Z" />
                         </svg>
                         <h2 class="text-3xl lg:text-4xl font-bold text-center max-w-2xl">Un buen diseño debería lograr una cancha entretenida pero competitiva.</h2>
-                        <p class="text-center text-lg mb-10">Integrada al paisaje existente y al master plan urbanístico.</p>
+                        {/* <p class="text-center text-lg mb-10">Integrada al paisaje existente y al master plan urbanístico.</p> */}
                     </div>
                     
-                    <div class="col-span-10 col-start-2 grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
+                    <div class="col-span-10 col-start-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-10">
                         <div>
                             <h3 class="text-xl font-semibold mb-4">Análisis y viabilidad del proyecto:</h3>
                             <ul class="space-y-2">
@@ -263,7 +263,7 @@ const ServiceSection = () => {
                             </ul>
                         </div> */}
                         {/* --- Categoría 2: “Construcción y gestión del proyecto” con 2 sub-columnas --- */}
-                      <div className="space-y-4 md:col-span-2">
+                      <div className="space-y-4 lg:col-span-2">
                         <h3 className="text-xl font-semibold">
                           Construcción y gestión del proyecto
                         </h3>
