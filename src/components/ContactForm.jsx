@@ -61,9 +61,8 @@ const ContactForm = () => {
             Escribinos y nos pondremos en contacto, o visitá nuestras redes sociales.
           </p>
           {/* Redes sociales */}
-          <div className="flex justify-center lg:justify-start space-x-2 sr-only lg:not-sr-only">
-            {/* Enlaces a redes */}
-          </div>
+          {/* <div className="flex justify-center lg:justify-start space-x-2 sr-only lg:not-sr-only">
+          </div> */}
         </div>
 
         {/* Formulario */}
