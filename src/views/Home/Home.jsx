@@ -17,8 +17,8 @@ const Home = () => {
             <Navbar />
             <Hero />
             <Services />
-            <ServiceSection />
             <AboutUsComponent />
+            <ServiceSection />
             <TestimonialCarousel />
             <div className="grid grid-cols-12" 
              data-aos="fade-up"
@@ -47,6 +47,7 @@ const Home = () => {
                 </div> 
             </div>
             <ProjectsSection />
+            <div className='pt-12'></div>
             <ContactForm />
             <WhatsAppButton />
             <Footer />

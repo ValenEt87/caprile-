@@ -1,77 +1,77 @@
 import React, { useState } from "react";
 
-const Accordion = ({ title, items, isOpen, onClick }) => (
-  <div className={`accordion-item ${isOpen ? "active" : ""}`}>
-    <div
-      className={`accordion-header ${isOpen ? "active" : ""} flex justify-between items-center p-4 cursor-pointer`}
-      onClick={onClick}
-    >
-      <h3 className="font-medium text-lg lg:text-xl color-white-bmr">{title}</h3>
-      {/* {isOpen ? (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="16"
-          fill="currentColor"
-          className="bi bi-dash text-white"
-          viewBox="0 0 16 16"
-        >
-          <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8" />
-        </svg>
-      ) : (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="16"
-          fill="currentColor"
-          className="bi bi-plus text-white"
-          viewBox="0 0 16 16"
-        >
-          <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
-        </svg>
-      )} */}
-    </div>
-    <div className={`accordion-body ${isOpen ? "active" : ""}`}>
-      <ul className="list-none">
-        {items.map((item, index) => (
-          <li key={index} className="flex items-center gap-2 mb-2 text-sm text-white">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              className="text-white"
-              viewBox="0 0 16 16"
-            >
-              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
-              <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
-            </svg>
-            {item}
-          </li>
-        ))}
-      </ul>
-    </div>
-  </div>
-);
+// const Accordion = ({ title, items, isOpen, onClick }) => (
+//   <div className={`accordion-item ${isOpen ? "active" : ""}`}>
+//     <div
+//       className={`accordion-header ${isOpen ? "active" : ""} flex justify-between items-center p-4 cursor-pointer`}
+//       onClick={onClick}
+//     >
+//       <h3 className="font-medium text-lg lg:text-xl color-white-bmr">{title}</h3>
+//       {isOpen ? (
+//         <svg
+//           xmlns="http://www.w3.org/2000/svg"
+//           width="16"
+//           height="16"
+//           fill="currentColor"
+//           className="bi bi-dash text-white"
+//           viewBox="0 0 16 16"
+//         >
+//           <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8" />
+//         </svg>
+//       ) : (
+//         <svg
+//           xmlns="http://www.w3.org/2000/svg"
+//           width="16"
+//           height="16"
+//           fill="currentColor"
+//           className="bi bi-plus text-white"
+//           viewBox="0 0 16 16"
+//         >
+//           <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+//         </svg>
+//       )}
+//     </div>
+//     <div className={`accordion-body ${isOpen ? "active" : ""}`}>
+//       <ul className="list-none">
+//         {items.map((item, index) => (
+//           <li key={index} className="flex items-center gap-2 mb-2 text-sm text-white">
+//             <svg
+//               xmlns="http://www.w3.org/2000/svg"
+//               width="16"
+//               height="16"
+//               fill="currentColor"
+//               className="text-white"
+//               viewBox="0 0 16 16"
+//             >
+//               <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+//               <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+//             </svg>
+//             {item}
+//           </li>
+//         ))}
+//       </ul>
+//     </div>
+//   </div>
+// );
 
 
 const ServiceSection = () => {
-  const accordionData = [
-    {
-      title: "Análisis y viabilidad del proyecto",
-      items: ["Permisos", "Calidad de Suelos y Aguas", "Factibilidad técnica", "Topografía y vegetación", "Impacto ambiental"],
-    },
-    {
-      title: "Construcción y gestión del proyecto",
-      items: ["1Routing Plan", "Ubicación de Club House", "Cart Paths", "Altimetría", "Movimiento de suelos", "Planos de detalle", "Drenajes", "Riegos", "Vistas", "Deforestación"],
-    },
-  ];
+//   const accordionData = [
+//     {
+//       title: "Análisis y viabilidad del proyecto",
+//       items: ["Permisos", "Calidad de Suelos y Aguas", "Factibilidad técnica", "Topografía y vegetación", "Impacto ambiental"],
+//     },
+//     {
+//       title: "Construcción y gestión del proyecto",
+//       items: ["1Routing Plan", "Ubicación de Club House", "Cart Paths", "Altimetría", "Movimiento de suelos", "Planos de detalle", "Drenajes", "Riegos", "Vistas", "Deforestación"],
+//     },
+//   ];
 
-  const [openIndex, setOpenIndex] = useState(1); // El segundo acordeón estará abierto por defecto.
+  // const [openIndex, setOpenIndex] = useState(1); 
 
-  const handleAccordionClick = (index) => {
-    setOpenIndex(openIndex === index ? -1 : index); // Abre/cierra el acordeón.
-  };
+  // const handleAccordionClick = (index) => {
+  //   setOpenIndex(openIndex === index ? -1 : index);
+  // };
 
   return (
     <>
@@ -111,9 +111,9 @@ const ServiceSection = () => {
         </div>
       </div>
     </section> */}
-    <section class="bg-services h-dvh bg-fixed bg-center bg-no-repeat text-white py-16 content-center mx-8 rounded-2xl">
+    <section class="bg-services bg-fixed bg-center bg-no-repeat text-white py-16 content-center mx-5 lg:mx-8 rounded-2xl">
                 <div class="grid grid-cols-12 mx-5 gap-5">
-                    <div className='col-span-12 text-center flex flex-col items-center'>
+                    <div className='col-span-12 text-center flex flex-col items-center mb-5'>
                         {/* <img src="/public/arco-separador.svg" alt="" className='w-24 mb-9' /> */}
                         <svg
                             id="Capa_1"
@@ -128,10 +128,10 @@ const ServiceSection = () => {
                             <path d="M975.2,119.57c-157.3-58.66-319.79-88.72-487.61-88C320.44,32.35,158,60.14,1.23,119.71a.75.75,0,0,1-1-.49l-.1-.34A.75.75,0,0,1,.51,118c3.73-2.08,7.42-4.23,11.2-6.21C50.11,91.7,90,75.1,130.91,60.78,181.24,43.15,232.55,29,285,19.59c31.37-5.63,63-10,94.64-13.78C421.32.85,463.23-.55,505.18.18A1096,1096,0,0,1,625.52,8.9,1071.71,1071.71,0,0,1,886.23,76,753,753,0,0,1,971.74,116c1.15.63,2.26,1.33,3.38,2a.74.74,0,0,1,.32.87Z" />
                         </svg>
                         <h2 class="text-3xl lg:text-4xl font-bold text-center max-w-2xl">Un buen diseño debería lograr una cancha entretenida pero competitiva.</h2>
-                        <p class="text-center text-lg mb-10">Integrada al paisaje existente y al master plan urbanístico.</p>
+                        {/* <p class="text-center text-lg mb-10">Integrada al paisaje existente y al master plan urbanístico.</p> */}
                     </div>
                     
-                    <div class="col-span-10 col-start-2 grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
+                    <div class="col-span-10 col-start-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-10">
                         <div>
                             <h3 class="text-xl font-semibold mb-4">Análisis y viabilidad del proyecto:</h3>
                             <ul class="space-y-2">
@@ -263,7 +263,7 @@ const ServiceSection = () => {
                             </ul>
                         </div> */}
                         {/* --- Categoría 2: “Construcción y gestión del proyecto” con 2 sub-columnas --- */}
-                      <div className="space-y-4 md:col-span-2">
+                      <div className="space-y-4 lg:col-span-2">
                         <h3 className="text-xl font-semibold">
                           Construcción y gestión del proyecto
                         </h3>
