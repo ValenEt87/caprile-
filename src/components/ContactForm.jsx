@@ -127,7 +127,7 @@ const ContactForm = () => {
             />
             <button
               type="submit"
-              className="w-full bg-green-950 text-white font-semibold py-3 rounded-lg hover:bg-green-900 transition duration-300"
+              className="w-full bg-green-900 text-white font-semibold py-3 rounded-full hover:bg-green-800 transition duration-300"
             >
               Enviar
             </button>

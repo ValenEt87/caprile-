@@ -29,7 +29,7 @@ const Navbar = () => {
         className={`navbar-bg fixed w-full z-50 top-0 start-0 transition-all duration-300 ease-[cubic-bezier(0.42, 0.00, 0.58, 1.00)] ${
           scrolled
             ? 'border-b border-[rgb(206,201,193)] backdrop-blur-[4px] bg-white/90'
-            : 'bg-[##FCF5EB]'
+            : 'bg-[#f5f5f5]'
         }`}
         data-aos="fade-down"
         data-aos-duration="800"
@@ -121,11 +121,11 @@ const Navbar = () => {
                     e.preventDefault(); // Evita el comportamiento predeterminado del enlace
                     document.getElementById("contacto")?.scrollIntoView({ behavior: "smooth" });
                   }}
-                  className={`py-2 px-3 lg:p-3 font-semibold nav-link bg-green-950 text-white rounded-lg md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:bg-green-900 dark:border-gray-700 ${
+                  className={`py-2 px-3 lg:py-3 lg:px-5 font-semibold nav-link bg-green-900 text-white rounded-full md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:bg-green-800 dark:border-gray-700 ${
                     location.pathname === '/sobre-nosotros' ? 'text-green-800' : 'text-gray-500'
                   }`}
                 >
-                  Contacto
+                  Escribinos
                 </a>
 
               </li>

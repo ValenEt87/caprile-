@@ -47,7 +47,7 @@ const Home = () => {
                 </div> 
             </div>
             <ProjectsSection />
-            <div className='pt-12'></div>
+            <div className='pt-16'></div>
             <ContactForm />
             <WhatsAppButton />
             <Footer />

@@ -4,7 +4,7 @@ import { AboutUsImages } from '../constants';
 
 const AboutUsComponent = () => {
     return (
-      <section className="grid grid-cols-12 pb-24 lg:gap-5 items-center mx-5 lg:mx-0">
+      <section className="grid grid-cols-12 pb-28 lg:gap-5 items-center mx-5 lg:mx-0">
         <h2 className="sr-only">Sobre nosotros</h2>
   
         {/* Contenedor del carrusel */}
@@ -36,7 +36,7 @@ const AboutUsComponent = () => {
           <div className="mt-4 lg:mt-6 flex justify-start gap-2">
             <a
               href="/sobre-nosotros"
-              className="bg-green-950 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-900 transition duration-500 flex items-center gap-2"
+              className="bg-green-900 text-white font-bold py-3 px-6 rounded-full hover:bg-green-800 transition duration-500 flex items-center gap-2"
             >
               Sobre nosotros
             </a>

@@ -22,15 +22,32 @@
   -moz-osx-font-smoothing: grayscale;
 }
 body{
- background-color: #FCF5EB; 
+ background-color: #F5f5f5; 
 }
 :root{
-  --color1: #113B21;
+  /* --color1: #113B21; */
   /* --color1: rgb(16, 57, 40); */
+  --color1-from: #006C4E; 
+  --color1-to:   #00968C; 
+  --color1: linear-gradient(135deg, var(--color1-from) 0%, var(--color1-to) 100%);
   --color2: #FBD15B;
   --color3: #252526;
-  --color4: #FCF5EB;
+  --color4: #f5f5f5;
   --color5: #0C7734;
+
+  --grad-primary: linear-gradient(
+    135deg,
+    #4FAE6E 0%,   /* verde */
+    #9ACA64 55%, /* lima pastel */
+    #F5DE76 100%  /* amarillo suave */
+  );
+}
+
+.gradient-text {
+  background: var(--grad-primary);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
 }
 
 .color-blue-bmr {
@@ -46,6 +63,9 @@ body{
   color: var(--color4);
 }
 
+.color-gradient {
+  color: var(--color1);
+}
 
 .bg-green-caprile{
   background-color: var(--color1);
@@ -136,7 +156,7 @@ body{
   width: 100%;
   height: 100%;
   background-color: #113B21;
-  opacity: 0.6;
+  opacity: 0.4;
   z-index: -1;
   pointer-events: none;
   border-radius: 20px;
@@ -225,11 +245,11 @@ body{
 }
 
 .navbar-bg .nav-link.text-white {
-  color: #FCF5EB;
+  color: #f5f5f5;
 }
 
 .navbar-bg{
-  background-color: rgba(252, 245, 235, .9);
+  background-color: #F5f5f5;
 }
 
 .hover-unfilled-buttons:hover{
@@ -369,7 +389,7 @@ button:focus {
 }
 
 .accordion-body {
-  background-color: #FCF5EB;
+  background-color: #f5f5f5;
   max-height: 0;
   padding: 0;
   opacity: 0;

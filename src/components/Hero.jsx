@@ -39,7 +39,7 @@ import { useState, useEffect } from "react";
                 e.preventDefault(); // Evita el comportamiento predeterminado del enlace
                 document.getElementById("contacto")?.scrollIntoView({ behavior: "smooth" });
               }}
-              className="font-bold bg-green-950 transition duration-300 ease-in-out rounded-lg text-base py-3 px-6 lg:px-6 hover:bg-green-900"
+              className="font-bold bg-green-900 transition duration-300 ease-in-out rounded-full text-base py-3 px-6 lg:px-6 hover:bg-green-800"
             >
               Contactanos
             </a>
