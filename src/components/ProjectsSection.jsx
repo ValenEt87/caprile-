@@ -77,9 +77,12 @@ const ProjectsSection = () => {
               </a> */}
               <a
                 href={`/proyectos?categoria=${category.toLowerCase().replace(/ /g, "-")}`}
-                className="relative color-blue-bmr font-bold text-sm lg:text-base group"
+                className="relative color-blue-bmr font-bold text-sm lg:text-base group flex items-center"
               >
-                Ver todos &#x279C;
+                Ver todos 
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="bi bi-arrow-right-short w-6 h-6" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+                </svg>
                 <span
                   className="absolute left-0 bottom-0 w-0 h-[2px] bg-green-900 transition-all duration-300 ease-in-out group-hover:w-full"
                 ></span>
