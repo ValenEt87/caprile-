@@ -247,10 +247,10 @@ export const golfCourses = [
     courses: [
       {
         title: "Los Lagartos C.C. (Pilar, Buenos Aires)",
-        coverImage: img7,
+        coverImage: img13,
         images: [
-          { src: img7, alt: "Campo principal de Los Lagartos Country Club" },
           { src: img13, alt: "Campo de Los Lagartos Country Club" },
+          { src: img7, alt: "Campo principal de Los Lagartos Country Club" },
           /* { src: img9, alt: "Campo principal de Los Lagartos Country Club" },
           { src: img10, alt: "Campo principal de Los Lagartos Country Club" } */
         ]
@@ -300,14 +300,16 @@ export const projectsWithoutImages = [
       { title: "Abril Country Club - (Hudson, Buenos Aires). En colaboracion con el Arq. Marcos Capdepont" },
       { title: "Jockey Club de Venado Tuerto - (Venado Tuerto, Santa Fe)" },
       { title: "La Vacherie C.C. (Alto Lunlunta, Mendoza). En colaboracion con el Arq. Marcos Capdepont" },
-      { title: "Estancia Villa Maria - (Cañuelas, Buenos Aires). Diseño de American Golf." },
-      { title: "Valle Escondido G.C. - (San Martín de los Andes, Neuquén)" },
       { title: "La Primavera C.C. - (Lujan, Buenos Aires)" },
       { title: "Medal Golf Club - (Pilar, Buenos Aires)" },
       { title: "Haras Los Moros - (Suipacha, Buenos Aires)" },
       { title: "La Lomada - (Pilar, Buenos Aires)" },
       { title: "ALG Golf Center - (Pilar, Buenos Aires)" },
-      { title: "Grand Bell C.C. - (City Bell, Buenos Aires). Diseño de Roberto De Vicenzo." }
+      { title: "Grand Bell C.C. - (City Bell, Buenos Aires). Diseño de Roberto De Vicenzo." },
+      { title: "Villa Arelauquen (Bariloche, Rio Negro)" },
+      { title: "Club de Golf La Dehesa (Santiago de Chile, Chile)"},
+      { title: "Carmel C.C. (Pilar, Benos Aires)" },
+      { title: "Libertad G.C. (Merlo, Buenos " }
     ]
   },
   {
@@ -342,14 +344,18 @@ export const projectsWithoutImages = [
 
 
 export const historiacalImages = [
+  "/imgs/Nosotros/image6.webp",
   "/imgs/Nosotros/lagartos1967.webp",
   "/imgs/Nosotros/arelauquen1972.webp",
-  "/imgs/Nosotros/image6.webp",
+  "/imgs/Nosotros/Marcos Capdepont, Ken Dye y Tolo Caprile en Martindale.webp",
+  "/imgs/Nosotros/Augusta1972.webp",
 ];
 
 export const actualImages = [
-  "/imgs/Nosotros/3generaciones.webp",
   "/imgs/Nosotros/pablo.webp",
+  "/imgs/Nosotros/Golfito7.webp",
+  "/imgs/Nosotros/Actualidad-.webp",
+  "/imgs/Nosotros/3generaciones.webp",
 ];
 
 export const testimonialImages = [
@@ -359,8 +365,9 @@ export const testimonialImages = [
 ];
 
 export const AboutUsImages = [
-  "/imgs/Nosotros/historia6.webp",
-  "/imgs/Nosotros/3generaciones.webp",
-  "/imgs/Nosotros/Marcos Capdepont, Ken Dye y Tolo Caprile en Martindale.webp",
-  "/imgs/Nosotros/pablo.webp",
+  "/imgs/servicios/MOVIMIENTODESUELOSOK.webp",
+  "/imgs/servicios/NIVELACIONDETEESOK.webp",
+  "/imgs/servicios/CONSTRUCCIONDEGREENOK.webp",
+  "/imgs/servicios/CONTRUCCIONDEGREENSOK.webp",
+  "/imgs/servicios/DRENAJESOK.webp",
 ];

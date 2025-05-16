@@ -13,11 +13,11 @@ const TestimonialCarousel = () => {
       {/* Contenedor del texto */}
       <div className="col-span-12 lg:col-span-5 lg:col-start-2 lg:px-4 order-2 lg:order-1">
         <h2 className="text-3xl lg:text-5xl font-medium mb-3">
-          Somos representantes exclusivos de Gary Player Design en latinoamérica.
+          Somos representantes exclusivos de Gary Player Design.
         </h2>
         <p className="lg:text-lg text-gray-700 mb-2">
           Nos enorgullece ser representantes oficiales de{" "}
-          <span className="font-semibold">Gary Player Design</span>. Con una trayectoria de excelencia en diseño de campos de golf, llevamos a la región la visión y experiencia de una leyenda del golf.
+          <span className="font-semibold">Gary Player Design</span> en latinoamérica. Con una trayectoria de excelencia en diseño de campos de golf, llevamos a la región la visión y experiencia de una leyenda del golf.
         </p>
         <blockquote className="border-l-4 border-green-950 pl-4 italic text-gray-600">
           "Diseñar campos de golf no es solo un arte, sino un legado para las futuras generaciones." - Gary Player

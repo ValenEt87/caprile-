@@ -27,11 +27,10 @@ const AboutUsComponent = () => {
           data-aos-delay="100"
         >
           <h3 className="text-3xl lg:text-5xl font-medium mb-3">
-            Contamos con un staff de shapers y operarios especializados y con equipos propios de construcción.
+            Contamos con un staff de shapers y operarios especializados.
           </h3>
           <p className="lg:text-lg">
-            Muchos de estos proyectos fueron con diseño propio y otros en
-            colaboración con renombrados diseñadores internacionales.
+          Y con equipos propios de construcción, para garantizar el mejor resultado. Muchos proyectos han sido trabajados en conjunto con renombrados diseñadores internacionales.
           </p>
           <div className="mt-4 lg:mt-6 flex justify-start gap-2">
             <a
